@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>古文今讀 41-50 互動版</title>
+<style>
+:root{
+  --teal:#2f6f62; --teal-dark:#204d43; --teal-light:#e8f3f0;
+  --pink:#ffe1ea; --pink-text:#c2185b; --paper:#fbf9f4;
+  --ok:#2e7d32; --bad:#c62828;
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--paper); color:#2a2a2a; line-height:1.75;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);}
+.wrap{max-width:900px;margin:0 auto;padding:10px 16px 70px;}
+.topbar{position:sticky;top:0;top:env(safe-area-inset-top,0px);z-index:20;
+  background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;
+  padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));
+  display:flex;gap:8px;overflow-x:auto;box-shadow:0 2px 8px rgba(0,0,0,.15);}
+.topbar a{color:#fff;text-decoration:none;font-size:.8rem;background:rgba(255,255,255,.15);
+  padding:6px 10px;border-radius:20px;white-space:nowrap;flex:none;}
+h1.page-title{text-align:center;color:var(--teal-dark);font-size:1.4rem;margin:18px 0 4px;}
+p.subtitle{text-align:center;color:#777;margin:0 0 20px;font-size:.85rem;}
+.lesson{background:#fff;border:1px solid #dfe7e4;border-radius:14px;margin:0 0 24px;
+  overflow:hidden;box-shadow:0 2px 10px rgba(30,70,60,.06);scroll-margin-top:70px;}
+.lesson-head{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;
+  padding:12px 18px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.lesson-head .no{font-size:1.5rem;font-weight:700;opacity:.9;}
+.lesson-head .title{font-size:1.2rem;font-weight:700;letter-spacing:.05em;}
+.lesson-head .src{margin-left:auto;font-size:.8rem;opacity:.85;}
+.lesson-body{padding:16px 18px 20px;}
+.orig{font-size:1.08rem;background:var(--teal-light);border-left:5px solid var(--teal);
+  border-radius:6px;padding:12px 16px;margin:4px 0 14px;letter-spacing:.02em;cursor:pointer;}
+.orig .hint{display:block;font-size:.72rem;color:#4a7d70;margin-top:6px;}
+h3.section-h{font-size:.9rem;color:var(--teal-dark);margin:16px 0 8px;
+  border-bottom:2px dotted #cfe0da;padding-bottom:4px;}
+ul.notes{margin:0;padding-left:1.1em;font-size:.9rem;color:#3a3a3a;display:none;}
+.notes.show{display:block;}
+.toggle-btn{background:var(--teal);color:#fff;border:none;border-radius:20px;
+  padding:5px 14px;font-size:.8rem;cursor:pointer;}
+.extra-box{display:block;background:var(--pink);border:1px solid #f5b8cf;border-radius:10px;
+  padding:8px 14px;margin:6px 0;font-size:.86rem;}
+.extra-box .tag{display:inline-block;background:var(--pink-text);color:#fff;
+  font-size:.7rem;border-radius:5px;padding:1px 7px;margin-right:6px;}
+.quiz li{margin:14px 0;font-size:.92rem;list-style:none;}
+.quiz ol{padding-left:0;margin:0;counter-reset:q;}
+.quiz ol li{counter-increment:q;}
+.quiz ol li:before{content:counter(q) ". ";font-weight:700;color:var(--teal-dark);}
+.opt-btn{display:block;width:100%;text-align:left;margin:5px 0;padding:8px 12px;
+  border:1px solid #cfd8d4;border-radius:8px;background:#fff;font-size:.88rem;
+  cursor:pointer;color:#333;}
+.opt-btn:active{background:#f0f0f0;}
+.opt-btn.correct{background:#e8f5e9;border-color:var(--ok);color:var(--ok);font-weight:700;}
+.opt-btn.wrong{background:#ffebee;border-color:var(--bad);color:var(--bad);}
+.feedback{font-size:.82rem;margin-top:2px;height:1.2em;}
+.review{background:#f4f1ea;border:2px dashed var(--teal);border-radius:16px;padding:16px 18px;}
+.review-title{text-align:center;color:var(--teal-dark);font-size:1.4rem;font-weight:700;margin:0;}
+.review-zy{text-align:center;color:#888;margin:0 0 14px;}
+.grp{background:#fff;border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid #e3ded0;
+  cursor:pointer;}
+.grp b{color:var(--teal-dark);}
+.grp ul{margin:6px 0 0;padding-left:1.2em;font-size:.88rem;display:none;}
+.grp ul.show{display:block;}
+footer{text-align:center;color:#999;font-size:.8rem;margin-top:36px;}
+</style></head>
+<body>
+<div class="topbar"><a href="#l41">41 對牛彈琴</a><a href="#l42">42 月攘一雞</a><a href="#l43">43 扣盤捫燭</a><a href="#l44">44 道邊苦李</a><a href="#l45">45 孟母戒子</a><a href="#l46">46 狗國狗門</a><a href="#l47">47 畫龍點睛</a><a href="#l48">48 顏回好學</a><a href="#l49">49 刻舟求劍</a><a href="#l50">50 獻鳩放生</a><a href="#review">虛字複習：盡</a></div>
+<div class="wrap">
+<h1 class="page-title">古文今讀 41～50 課　互動練習</h1>
+<p class="subtitle">點選原文可看注釋，點選選項立即對答案</p>
+
+<section class="lesson" id="l41">
+  <div class="lesson-head">
+    <span class="no">41</span><span class="title">對牛彈琴</span>
+    <span class="src">出處：《弘明集》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">公明儀為牛彈清角之操，伏食如故，非牛不聞，不合其耳矣。轉為蚊虻之聲，孤犢之鳴，即掉尾奮耳，蹀躞而聽。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes41')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes41"><li>①公明儀：春秋時代魯國音樂家。</li><li>②清角之操：高雅的琴曲。操，樂曲名。</li><li>③伏食如故：仍舊低頭吃草。</li><li>④非：不是。</li><li>⑤不合其耳：不合牛的聽覺習慣，牛聽不慣。</li><li>⑥蚊虻之聲：像蚊蟲鼓翅的聲音。</li><li>⑦孤犢：離群的小牛。</li><li>⑧掉尾：搖擺尾巴。</li><li>⑨奮耳：豎起耳朵。</li><li>⑩蹀躞：小步來回走動的樣子。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>1. 助詞，的　2. 助詞，無義　3. 動詞，到　4. 代詞</div><div class="extra-box"><span class="tag">成語</span><b>高山流水</b><br>1. 形容樂曲的高妙　2. 後比喻知音的難遇</div><div class="extra-box"><span class="tag">成語</span><b>九牛一毛</b><br>許多牛身上的一根毛，比喻多數中的極少部分，對大體沒有什麼影響</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>公明儀對牛彈奏高雅的「清角之操」，牛的反應是？<div class="opt-group" id="q41_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_1')">(A) 豎耳細聽</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q41_1')">(B) 伏地吃草，毫無反應</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_1')">(C) 受驚逃走</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_1')">(D) 搖頭擺尾表示喜愛</button><div class="feedback"></div></div></li><li>公明儀後來改彈類似什麼聲音，牛才有反應？<div class="opt-group" id="q41_2"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q41_2')">(A) 蚊虻與孤犢的鳴叫聲</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_2')">(B) 高山流水的雅樂</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_2')">(C) 雷電交加的聲音</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_2')">(D) 其他牛隻的叫聲</button><div class="feedback"></div></div></li><li>「對牛彈琴」這句成語主要譏諷什麼樣的行為？<div class="opt-group" id="q41_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_3')">(A) 講究音樂品味</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q41_3')">(B) 對不懂道理或不感興趣的對象講述深奧的道理</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_3')">(C) 刻意討好聽眾</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_3')">(D) 堅持己見不知變通</button><div class="feedback"></div></div></li><li>下列何者與「九牛一毛」意義最接近？<div class="opt-group" id="q41_4"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q41_4')">(A) 微不足道</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_4')">(B) 舉足輕重</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_4')">(C) 牛刀小試</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q41_4')">(D) 對牛彈琴</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l42">
+  <div class="lesson-head">
+    <span class="no">42</span><span class="title">月攘一雞</span>
+    <span class="src">出處：《孟子》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">今有人日攘其鄰之雞者，或告之曰：「是非君子之道。」曰：「請損之，月攘一雞，以待來年然後已。」如知其非義，斯速已矣，何待來年？</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes42')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes42"><li>①攘：竊取。</li><li>②或：有人。</li><li>③損：減少。</li><li>④已：停止。</li><li>⑤斯：就。</li><li>⑥速：趕快。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「其」的用法</b><br>代詞，指偷雞的人</div><div class="extra-box"><span class="tag">名句精讀</span><b>當局者迷，旁觀者清</b><br>《舊唐書》</div><div class="extra-box"><span class="tag">名句精讀</span><b>不識廬山真面目，只緣身在此山中</b><br>蘇軾〈題西林壁〉，因為</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>文中偷雞的人打算用什麼方式改正自己的錯誤？<div class="opt-group" id="q42_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_1')">(A) 立刻停止偷雞</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q42_1')">(B) 每月只偷一隻，等明年才完全停止</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_1')">(C) 向鄰居道歉賠償</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_1')">(D) 請鄰居原諒</button><div class="feedback"></div></div></li><li>「如知其非義，斯速已矣，何待來年」這句話的用意是？<div class="opt-group" id="q42_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_2')">(A) 稱讚偷雞者知錯能改</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q42_2')">(B) 批評偷雞者明知不對卻拖延改過</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_2')">(C) 勸人耐心等待時機</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_2')">(D) 說明偷雞合乎情理</button><div class="feedback"></div></div></li><li>本文主要說明什麼道理？<div class="opt-group" id="q42_3"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q42_3')">(A) 知錯就要立刻改正，不可拖延</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_3')">(B) 做事要合乎法律規定</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_3')">(C) 鄰居之間應互相體諒</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_3')">(D) 行善要及時</button><div class="feedback"></div></div></li><li>「請損之」的「損」字意思與下列何者最接近？<div class="opt-group" id="q42_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_4')">(A) 損害</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q42_4')">(B) 減少</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_4')">(C) 損失</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q42_4')">(D) 損毀</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l43">
+  <div class="lesson-head">
+    <span class="no">43</span><span class="title">扣盤捫燭</span>
+    <span class="src">出處：蘇軾〈日喻〉</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">生而眇者不識日，問之有目者。或告之曰：「日之狀如銅盤。」扣盤而得其聲。他日聞鐘，以為日也。或告之曰：「日之光如燭。」捫燭而得其形。他日揣籥，以為日也。日之與鐘籥亦遠矣，而眇者不知其異，以其未嘗見而求之人也。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes43')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes43"><li>①眇：雙目失明。</li><li>②識：認識。</li><li>③或：有人。</li><li>④扣：敲、擊。</li><li>⑤揣：撫摸。</li><li>⑥籥：古樂器名，竹製，類似短笛。</li><li>⑦捫：撫摸。</li><li>⑧異：不同。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>代詞，指生而眇者／代詞，指銅盤</div><div class="extra-box"><span class="tag">延伸</span><b>捫心自問</b><br>指自我反省檢討</div><div class="extra-box"><span class="tag">主旨</span><b>由狀推其聲，由光推其形</b><br>比喻認識不確切而產生誤會（先敘後議）</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>生而眇者為何會把鐘聲當成太陽？<div class="opt-group" id="q43_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_1')">(A) 他曾經聽過鐘聲</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q43_1')">(B) 有人告訴他太陽的形狀像銅盤，他敲盤得其聲，後聽到鐘聲便誤以為是太陽</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_1')">(C) 他故意欺騙別人</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_1')">(D) 鐘聲與陽光很相似</button><div class="feedback"></div></div></li><li>本文以「扣盤捫燭」比喻什麼？<div class="opt-group" id="q43_2"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q43_2')">(A) 認識片面、未得要領而產生誤會</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_2')">(B) 勤學好問的精神</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_2')">(C) 以訛傳訛的危害</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_2')">(D) 追求真理的堅持</button><div class="feedback"></div></div></li><li>作者用「生而眇者」的例子，主要用意是？<div class="opt-group" id="q43_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_3')">(A) 嘲笑盲人的無知</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q43_3')">(B) 說明未經親身體驗、僅憑片面資訊推想事物，容易產生誤會</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_3')">(C) 讚美盲人善於想像</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_3')">(D) 強調視覺的重要</button><div class="feedback"></div></div></li><li>「捫心自問」的意思是？<div class="opt-group" id="q43_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_4')">(A) 撫摸胸口</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q43_4')">(B) 自我反省檢討</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_4')">(C) 向人求教</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q43_4')">(D) 假裝鎮定</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l44">
+  <div class="lesson-head">
+    <span class="no">44</span><span class="title">道邊苦李</span>
+    <span class="src">出處：《世說新語》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">王戎七歲，嘗與諸小兒遊，看道邊李樹多子折枝，諸兒競走取之，唯戎不動。人問之，答曰：「樹在道邊而多子，此必苦李。」取之，信然。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes44')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes44"><li>①嘗：曾經。</li><li>②競走：爭相奔跑。</li><li>③折枝：壓彎了樹枝。</li><li>④信然：果然如此。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">名句精讀</span><b>投我以桃，報之以李</b><br>《詩經》——比喻人際交往中的贈與或付出，一般用在好事上，是禮尚往來的意思。</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>王戎判斷路邊李樹是苦李的依據為何？<div class="opt-group" id="q44_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_1')">(A) 親自摘來嚐過</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_1')">(B) 聽別人說的</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q44_1')">(C) 樹長在路邊卻果實纍纍，可推知無人採摘，必是苦李</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_1')">(D) 看樹葉的顏色判斷</button><div class="feedback"></div></div></li><li>本文主要描述王戎幼時具有什麼特質？<div class="opt-group" id="q44_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_2')">(A) 貪吃</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q44_2')">(B) 觀察力敏銳，善於推理判斷</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_2')">(C) 體弱多病</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_2')">(D) 個性衝動</button><div class="feedback"></div></div></li><li>「諸兒競走取之，唯戎不動」顯示王戎與其他孩童的差異在於？<div class="opt-group" id="q44_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_3')">(A) 王戎跑得比較慢</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_3')">(B) 王戎不喜歡吃李子</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q44_3')">(C) 王戎能冷靜觀察，不隨眾盲從</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_3')">(D) 王戎害怕受傷</button><div class="feedback"></div></div></li><li>「投我以桃，報之以李」比喻的意思最接近下列何者？<div class="opt-group" id="q44_4"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q44_4')">(A) 禮尚往來</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_4')">(B) 恩將仇報</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_4')">(C) 得寸進尺</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q44_4')">(D) 以德報怨</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l45">
+  <div class="lesson-head">
+    <span class="no">45</span><span class="title">孟母戒子</span>
+    <span class="src">出處：《韓詩外傳》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">孟子少時誦，其母方織。孟子輟然中止，乃復進。其母知其諠也，呼而問之曰：「何為中止？」對曰：「有所失，復得。」其母引刀裂其織，以此誡之。自是之後，孟子不復諠矣。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes45')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes45"><li>①誦：誦讀。</li><li>②方：正在。</li><li>③輟然中止：忽然停止。</li><li>④復進：繼續誦讀下去。</li><li>⑤諠：忘記。</li><li>⑥引：拿起。</li><li>⑦裂：割破。</li><li>⑧誡：告誡、警告。</li><li>⑨自是：從此。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「方」的用法</b><br>1. 正在（其母方織）　2. 法子、辦法　3. 方形的</div><div class="extra-box"><span class="tag">成語</span><b>方興未艾</b><br>正在蓬勃發展</div><div class="extra-box"><span class="tag">成語</span><b>圓顱方趾</b><br>人皆頭圓足方，故用以代稱人類</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>孟子讀書讀到一半忽然停下來，是因為？<div class="opt-group" id="q45_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_1')">(A) 肚子餓了</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q45_1')">(B) 一時忘記了誦讀的內容，後來又想起來</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_1')">(C) 想偷懶</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_1')">(D) 被外面的聲音吸引</button><div class="feedback"></div></div></li><li>孟母用什麼方式教訓孟子？<div class="opt-group" id="q45_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_2')">(A) 責罵孟子</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q45_2')">(B) 割斷正在織的布，比喻半途而廢會前功盡棄</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_2')">(C) 不給孟子飯吃</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_2')">(D) 請老師嚴加管教</button><div class="feedback"></div></div></li><li>本文主要告誡孟子讀書要？<div class="opt-group" id="q45_3"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q45_3')">(A) 專心一致，不可半途而廢</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_3')">(B) 多讀多背</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_3')">(C) 遵守長輩教誨</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_3')">(D) 行行出狀元</button><div class="feedback"></div></div></li><li>「方興未艾」的意思是？<div class="opt-group" id="q45_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_4')">(A) 剛剛結束</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q45_4')">(B) 正在蓬勃發展</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_4')">(C) 即將衰敗</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q45_4')">(D) 停滯不前</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l46">
+  <div class="lesson-head">
+    <span class="no">46</span><span class="title">狗國狗門</span>
+    <span class="src">出處：《晏子春秋》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">晏子使楚，楚國以晏子短，為小門於大門之側而延晏子。晏子不入，曰：「使狗國者，從狗門入；今臣使楚，不當從此門入。」儐者更道，從大門入。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes46')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes46"><li>①使：出使。</li><li>②延：請。</li><li>③儐者：負責接待賓客的人。</li><li>④更道：換一條路。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">延伸</span><b>暴虎馮河</b><br>暴，徒手搏鬥；馮，徒步渡河。指空手與虎搏鬥，不靠舟船渡河，比喻人有勇而無謀。</div><div class="extra-box"><span class="tag">成語教室</span><b>狗尾續貂</b><br>把不好的東西接續在好東西後面，前後不相稱</div><div class="extra-box"><span class="tag">成語教室</span><b>偷雞摸狗</b><br>比喻沒有正經本領、行為卑劣的人</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>楚國人為何在大門旁開一個小門請晏子從那裡進入？<div class="opt-group" id="q46_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_1')">(A) 大門正在整修</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q46_1')">(B) 故意羞辱晏子身材矮小</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_1')">(C) 表示對晏子的尊敬</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_1')">(D) 小門比較近</button><div class="feedback"></div></div></li><li>晏子用什麼理由拒絕從小門進入？<div class="opt-group" id="q46_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_2')">(A) 小門太窄，走不進去</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q46_2')">(B) 只有出使狗國的人才從狗門進入，他是出使楚國，不該從此門入</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_2')">(C) 小門不吉利</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_2')">(D) 大門比較氣派</button><div class="feedback"></div></div></li><li>本文顯示晏子具有什麼樣的特質？<div class="opt-group" id="q46_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_3')">(A) 身材高大</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q46_3')">(B) 機智善辯，不畏強權</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_3')">(C) 個性軟弱</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_3')">(D) 不懂禮節</button><div class="feedback"></div></div></li><li>「暴虎馮河」用來比喻什麼樣的人？<div class="opt-group" id="q46_4"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q46_4')">(A) 有勇無謀</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_4')">(B) 足智多謀</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_4')">(C) 膽小怕事</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q46_4')">(D) 溫文儒雅</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l47">
+  <div class="lesson-head">
+    <span class="no">47</span><span class="title">畫龍點睛</span>
+    <span class="src">出處：唐．張彥遠《歷代名畫記》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">張僧繇於金陵安樂寺畫四龍於壁，不點睛。每曰：「點之即飛去。」人以為誕，固請點之。須臾，雷電破壁，一龍乘雲上天，不點睛者皆在。</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes47')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes47"><li>①金陵：今南京。</li><li>②每：常常。</li><li>③誕：荒誕、虛妄。</li><li>④固：堅持。</li><li>⑤須臾：一會兒。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>代詞，指眼睛</div><div class="extra-box"><span class="tag">延伸</span><b>轉瞬、彈指</b><br>一眨眼；「俄而」則是剎那</div><div class="extra-box"><span class="tag">趣味諺語</span><b>大水沖倒龍王廟</b><br>比喻自己人不認識自己人，或自己人之間發生誤會</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>張僧繇畫龍卻不點眼睛的原因是？<div class="opt-group" id="q47_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_1')">(A) 技巧不足，畫不出眼睛</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q47_1')">(B) 他認為一旦點上眼睛，龍就會飛走</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_1')">(C) 故意賣關子</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_1')">(D) 顏料不足</button><div class="feedback"></div></div></li><li>眾人請張僧繇點睛之後發生了什麼事？<div class="opt-group" id="q47_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_2')">(A) 什麼都沒發生</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q47_2')">(B) 雷電破壁，被點睛的龍乘雲飛上天</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_2')">(C) 龍變成石頭</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_2')">(D) 牆壁倒塌</button><div class="feedback"></div></div></li><li>「畫龍點睛」現在多用來比喻？<div class="opt-group" id="q47_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_3')">(A) 徒勞無功</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q47_3')">(B) 在文章或言談的關鍵處加上精要的一筆，使內容更加生動傳神</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_3')">(C) 弄巧成拙</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_3')">(D) 畫蛇添足</button><div class="feedback"></div></div></li><li>下列何者與「畫龍點睛」的用法最為相反？<div class="opt-group" id="q47_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_4')">(A) 一語道破</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_4')">(B) 錦上添花</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q47_4')">(C) 畫蛇添足，多此一舉</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q47_4')">(D) 恰到好處</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l48">
+  <div class="lesson-head">
+    <span class="no">48</span><span class="title">顏回好學</span>
+    <span class="src">出處：《史記》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">回年二十九，髮盡白，蚤死。孔子哭之慟，曰：「自吾有回，門人益親。」魯哀公問：「弟子孰為好學？」孔子對曰：「有顏回者好學，不遷怒，不貳過。不幸短命死矣，今也則亡。」</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes48')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes48"><li>①蚤：通「早」。</li><li>②慟：過度悲傷、哀痛。</li><li>③孰：誰。</li><li>④不遷怒：不把對某人的怒氣發洩在其他人身上。</li><li>⑤不貳過：不犯同樣的錯誤。</li><li>⑥亡：通「無」，沒有。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「舉」的用法</b><br>1. 全部的、整個的（如舉國上下）　2. 中舉　3. 同「悉」，全</div><div class="extra-box"><span class="tag">人物小傳</span><b>孔子</b><br>名丘，字仲尼，春秋時代魯國人，儒家創始人，被尊稱為「至聖先師」。</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>孔子聽聞顏回過世後的反應是？<div class="opt-group" id="q48_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_1')">(A) 無動於衷</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q48_1')">(B) 哭得非常悲傷，說自從有了顏回，弟子們更加親近他</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_1')">(C) 責怪顏回不夠謹慎</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_1')">(D) 舉行盛大的喪禮</button><div class="feedback"></div></div></li><li>孔子認為顏回好學表現在哪兩件事上？<div class="opt-group" id="q48_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_2')">(A) 博覽群書、能言善道</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q48_2')">(B) 不遷怒、不貳過</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_2')">(C) 家境清寒卻樂在其中</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_2')">(D) 勤練武藝、廣交朋友</button><div class="feedback"></div></div></li><li>「不遷怒」的意思是？<div class="opt-group" id="q48_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_3')">(A) 不遷居</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q48_3')">(B) 不把對某人的怒氣發洩到別人身上</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_3')">(C) 不輕易生氣</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_3')">(D) 不記仇</button><div class="feedback"></div></div></li><li>孔子稱顏回好學，主要著重在顏回哪方面的表現？<div class="opt-group" id="q48_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_4')">(A) 知識淵博</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q48_4')">(B) 品德修養與面對過錯的態度</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_4')">(C) 辯才無礙</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q48_4')">(D) 體能出眾</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l49">
+  <div class="lesson-head">
+    <span class="no">49</span><span class="title">刻舟求劍</span>
+    <span class="src">出處：《呂氏春秋》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">楚人有涉江者，其劍自舟中墜於水，遽契其舟，曰：「是吾劍之所從墜。」舟止，從其所契者入水求之。舟已行矣，而劍不行，求劍若此，不亦惑乎？</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes49')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes49"><li>①涉江：渡江。</li><li>②遽：急忙。</li><li>③契：雕刻。</li><li>④惑：糊塗。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「其」的用法</b><br>代詞，指涉江者</div><div class="extra-box"><span class="tag">延伸</span><b>刻舟求劍</b><br>比喻拘泥固執，不知變通</div><div class="extra-box"><span class="tag">延伸</span><b>膠柱鼓瑟／削足適履</b><br>前者比喻頑固而不知變通；後者比喻勉強遷就，拘泥舊例而不知變通</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>楚人的劍掉入水中後，他做了什麼動作？<div class="opt-group" id="q49_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_1')">(A) 立刻跳下水找劍</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q49_1')">(B) 在船身上刻記號，等船停下再去記號處找劍</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_1')">(C) 請船夫幫忙打撈</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_1')">(D) 放棄尋找</button><div class="feedback"></div></div></li><li>楚人的做法為什麼找不到劍？<div class="opt-group" id="q49_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_2')">(A) 劍已經被別人撿走</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q49_2')">(B) 船一直在移動，劍卻沉在原處不動，記號的位置與劍的實際位置已不同</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_2')">(C) 水太深</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_2')">(D) 記號刻得不清楚</button><div class="feedback"></div></div></li><li>「刻舟求劍」用來比喻什麼樣的人？<div class="opt-group" id="q49_3"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_3')">(A) 勇於嘗試</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q49_3')">(B) 拘泥成規、不知隨情況變通</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_3')">(C) 粗心大意</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_3')">(D) 聰明機智</button><div class="feedback"></div></div></li><li>下列何者與「刻舟求劍」意義最相近？<div class="opt-group" id="q49_4"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q49_4')">(A) 膠柱鼓瑟</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_4')">(B) 臨渴掘井</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_4')">(C) 守株待兔</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q49_4')">(D) 畫蛇添足</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="l50">
+  <div class="lesson-head">
+    <span class="no">50</span><span class="title">獻鳩放生</span>
+    <span class="src">出處：《列子》</span>
+  </div>
+  <div class="lesson-body">
+    <div class="orig">邯鄲之民以正月之旦獻鳩於簡子，簡子大悅，厚賞之。客問其故，簡子曰：「正旦放生，示有恩也。」客曰：「民知君之欲放之，競而捕之，死者眾矣。君如欲生之，不若禁民勿捕。捕而放之，恩過不相補矣。」簡子曰：「然。」</div>
+    <button class="toggle-btn" onclick="toggleNotes(this,'notes50')">顯示注釋 ▼</button>
+    <ul class="notes" id="notes50"><li>①旦：早晨，此指正月初一。</li><li>②鳩：斑鳩，一種鳥。</li><li>③簡子：趙簡子，春秋時晉國大夫。</li><li>④厚賞：重賞。</li><li>⑤故：緣故、原因。</li><li>⑥示：表示。</li></ul>
+    <h3 class="section-h">虛字．成語．延伸補充</h3>
+    <div><div class="extra-box"><span class="tag">虛字</span><b>「於」的用法</b><br>1. 對於　2. 向　3. 在　4. 比（苛政猛「於」虎）　5. 給（己所不欲，勿施「於」人）　6. 被，置於動詞之後表示被動</div></div>
+    <div class="quiz"><h3 class="section-h">隨堂練習（點選答案立即對答案）</h3><ol><li>邯鄲百姓為何在正月初一獻斑鳩給趙簡子？<div class="opt-group" id="q50_1"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_1')">(A) 出於敬畏</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q50_1')">(B) 因趙簡子重賞獻鳩之人，百姓爭相捕捉來獻</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_1')">(C) 是傳統節慶習俗</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_1')">(D) 斑鳩是吉祥的象徵</button><div class="feedback"></div></div></li><li>門客認為趙簡子「正旦放生」的做法有什麼問題？<div class="opt-group" id="q50_2"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_2')">(A) 放生的方式不對</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q50_2')">(B) 百姓為了獻鳥而競相捕捉，反而害死更多斑鳩，恩惠抵不過傷害</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_2')">(C) 斑鳩不該被放生</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_2')">(D) 應該放生更多動物</button><div class="feedback"></div></div></li><li>本文主要諷刺什麼樣的行為？<div class="opt-group" id="q50_3"><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q50_3')">(A) 真心行善卻方法錯誤，徒具形式而未能真正實踐仁德</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_3')">(B) 吝嗇小氣</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_3')">(C) 濫用權勢</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_3')">(D) 崇尚迷信</button><div class="feedback"></div></div></li><li>根據本文，趙簡子聽完門客的話後態度為何？<div class="opt-group" id="q50_4"><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_4')">(A) 勃然大怒</button><button class="opt-btn" data-correct="1" onclick="pick(this,true,'q50_4')">(B) 欣然接受，認同門客的看法</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_4')">(C) 完全不予理會</button><button class="opt-btn" data-correct="0" onclick="pick(this,false,'q50_4')">(D) 反駁門客的說法</button><div class="feedback"></div></div></li></ol></div>
+  </div>
+</section>
+<section class="lesson" id="review">
+  <div class="lesson-body">
+    <div class="review">
+      <p class="review-title">虛字複習：「盡」ㄐㄧㄣˋ</p>
+      <p class="review-zy">點每一項可展開例句</p>
+      <div class="grp" onclick="toggleGrp(this)"><b>完結、終止，動詞</b>（點我看例句）<ul><li>盡在不言中</li><li>應有盡有</li><li>二蟲盡為所吞</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>完備的，形容詞</b>（點我看例句）<ul><li>詳盡</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>全部用出，竭力、努力完成，動詞</b>（點我看例句）<ul><li>竭盡所能</li><li>盡其所長</li><li>消滅殆盡</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>隱沒，動詞</b>（點我看例句）<ul><li>孤帆遠影碧山盡</li><li>白日依山盡</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>自盡：死亡，動詞</b>（點我看例句）<ul><li>自盡</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>完全，全部，副詞</b>（點我看例句）<ul><li>取之不盡</li><li>春蠶到死絲方盡，蠟炬成灰淚始乾</li></ul></div><div class="grp" onclick="toggleGrp(this)"><b>極端、達到極限，副詞</b>（點我看例句）<ul><li>盡善盡美</li></ul></div>
+    </div>
+  </div>
+</section>
+<footer>陳翠屏老師 國文科教材　東興國中</footer>
+</div>
+<script>
+function toggleNotes(btn,id){
+  var el=document.getElementById(id);
+  el.classList.toggle('show');
+  btn.textContent = el.classList.contains('show') ? '隱藏注釋 ▲' : '顯示注釋 ▼';
+}
+function toggleGrp(el){
+  var ul = el.querySelector('ul');
+  ul.classList.toggle('show');
+}
+function pick(btn, isCorrect, groupId){
+  var group = document.getElementById(groupId);
+  var btns = group.querySelectorAll('.opt-btn');
+  btns.forEach(function(b){ b.disabled = true; });
+  var fb = group.querySelector('.feedback');
+  if(isCorrect){
+    btn.classList.add('correct');
+    fb.textContent = '✅ 答對了！';
+    fb.style.color = '#2e7d32';
+  } else {
+    btn.classList.add('wrong');
+    group.querySelectorAll('.opt-btn').forEach(function(b){
+      if(b.dataset.correct === '1'){ b.classList.add('correct'); }
+    });
+    fb.textContent = '❌ 再想想，正確答案已標示為綠色';
+    fb.style.color = '#c62828';
+  }
+}
+</script>
+</body></html>
