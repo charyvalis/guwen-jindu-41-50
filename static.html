@@ -1,206 +1,301 @@
 <!DOCTYPE html>
-<html lang="zh-Hant"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>古文今讀 41-50 講義</title>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>古文今讀 41–50 課　虛字整理與選擇題</title>
 <style>
-:root{
-  --teal:#2f6f62; --teal-dark:#204d43; --teal-light:#e8f3f0;
-  --pink:#ffe1ea; --pink-text:#c2185b; --yellow:#fff6cc;
-  --paper:#fbf9f4;
-}
-*{box-sizing:border-box;}
-body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
-  background:var(--paper); color:#2a2a2a; line-height:1.75;}
-.wrap{max-width:900px;margin:0 auto;padding:28px 18px 80px;}
-h1.page-title{text-align:center;color:var(--teal-dark);font-size:1.6rem;margin:6px 0 4px;}
-p.subtitle{text-align:center;color:#777;margin:0 0 28px;font-size:.9rem;}
-.lesson{background:#fff;border:1px solid #dfe7e4;border-radius:14px;margin:0 0 30px;
-  overflow:hidden;box-shadow:0 2px 10px rgba(30,70,60,.06);}
-.lesson-head{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;
-  padding:14px 20px;display:flex;align-items:baseline;gap:14px;}
-.lesson-head .no{font-size:1.6rem;font-weight:700;opacity:.9;}
-.lesson-head .title{font-size:1.3rem;font-weight:700;letter-spacing:.05em;}
-.lesson-head .src{margin-left:auto;font-size:.85rem;opacity:.85;}
-.lesson-body{padding:18px 22px 22px;}
-.orig{font-size:1.12rem;background:var(--teal-light);border-left:5px solid var(--teal);
-  border-radius:6px;padding:14px 18px;margin:6px 0 16px;letter-spacing:.02em;}
-h3.section-h{font-size:.95rem;color:var(--teal-dark);margin:18px 0 8px;
-  border-bottom:2px dotted #cfe0da;padding-bottom:4px;}
-ul.notes{margin:0;padding-left:1.1em;font-size:.92rem;color:#3a3a3a;}
-ul.notes li{margin:2px 0;}
-.extra-box{display:inline-block;vertical-align:top;background:var(--pink);
-  border:1px solid #f5b8cf;border-radius:10px;padding:8px 14px;margin:6px 8px 6px 0;
-  font-size:.88rem;max-width:100%;}
-.extra-box .tag{display:inline-block;background:var(--pink-text);color:#fff;
-  font-size:.72rem;border-radius:5px;padding:1px 7px;margin-right:6px;}
-.quiz{margin-top:16px;}
-.quiz ol{padding-left:1.2em;margin:0;}
-.quiz li{margin:10px 0;font-size:.95rem;}
-.quiz .opts{display:grid;grid-template-columns:1fr 1fr;gap:2px 14px;margin-top:4px;font-size:.9rem;color:#333;}
-.answer-key{background:#f2f2f2;border-radius:10px;padding:10px 18px;font-size:.85rem;color:#555;margin-top:10px;}
-.review{background:#f4f1ea;border:2px dashed var(--teal);border-radius:16px;padding:20px 22px;margin-top:10px;}
-.review h2{text-align:center;color:var(--teal-dark);margin:0 0 4px;}
-.review .zy{text-align:center;color:#888;margin:0 0 16px;}
-.review .grp{background:#fff;border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid #e3ded0;}
-.review .grp b{color:var(--teal-dark);}
-.review .grp ul{margin:6px 0 0;padding-left:1.2em;font-size:.9rem;}
-footer{text-align:center;color:#999;font-size:.8rem;margin-top:40px;}
-@media print{
-  body{background:#fff;}
-  .lesson{box-shadow:none;break-inside:avoid;}
-}
-</style></head>
-<body><div class="wrap">
-<h1 class="page-title">古文今讀 41～50 課　講義</h1>
-<p class="subtitle">對牛彈琴．月攘一雞．扣盤捫燭．道邊苦李．孟母戒子．狗國狗門．畫龍點睛．顏回好學．刻舟求劍．獻鳩放生</p>
+  :root {
+    --bg: #ffffff; --fg: #1f2a1f; --muted: #6b7280; --accent: #385723; --accent-bg: #e2efda;
+    --line: #a6a6a6; --row: #f7f7f7; --hl: #c00000; --blue: #ddebf7; --orange: #fce4d6;
+    --ok: #2e7d32; --ok-bg: #e3f2e1; --bad: #c62828; --bad-bg: #fdeaea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161a16; --fg: #e8ece8; --muted: #9aa39a; --accent: #a9d18e; --accent-bg: #253323;
+      --line: #4a544a; --row: #1e241e; --hl: #ff8a80; --blue: #1f3040; --orange: #40291f;
+      --ok: #81c784; --ok-bg: #1f3a21; --bad: #ef9a9a; --bad-bg: #3f2222;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "DFKai-SB", "BiauKai", "標楷體", "Noto Serif TC", "Songti TC", serif;
+    font-size: 17px; line-height: 1.7;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { text-align: center; color: var(--accent); font-size: 1.9rem; margin: 8px 0 2px; }
+  .subtitle { text-align: center; font-size: 1.35rem; font-weight: bold; margin: 0 0 6px; }
+  .lessons-line, .legend { text-align: center; color: var(--muted); font-size: .85rem; margin: 2px 0; }
+  nav.toc { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 14px 0 6px; }
+  nav.toc a {
+    text-decoration: none; color: var(--accent); background: var(--accent-bg);
+    padding: 4px 12px; border-radius: 999px; font-size: .9rem;
+  }
+  h2 {
+    color: var(--accent); font-size: 1.45rem; margin: 28px 0 10px; padding-bottom: 2px;
+    border-bottom: 2px solid #548235; scroll-margin-top: 12px;
+  }
+  h3 { font-size: 1.1rem; margin: 16px 0 6px; }
+  h3.lesson { background: var(--accent-bg); color: var(--accent); padding: 4px 10px; border-radius: 4px; margin-top: 22px; }
+  h3.lesson small { font-weight: normal; color: var(--muted); font-size: .8rem; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid var(--line); padding: 5px 10px; vertical-align: middle; }
+  table.meaning thead th { background: var(--accent-bg); text-align: center; font-size: .95rem; }
+  table.meaning.blue thead th { background: var(--blue); }
+  table.meaning.orange thead th { background: var(--orange); }
+  table.meaning tbody th { background: var(--row); width: 9.5em; text-align: center; font-size: .95rem; white-space: nowrap; }
+  .ex { font-size: .98rem; padding: 1px 0; }
+  .src { color: var(--muted); font-size: .75rem; margin-left: .3em; }
+  .hl { color: var(--hl); font-weight: bold; }
+  .note { font-size: .95rem; margin: 8px 0; }
+  .infoline { text-align: center; margin: 6px 0 10px; }
+  .printonly { display: none; }
+  .bar {
+    position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+    background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 0; margin: 10px 0 0;
+    font-family: system-ui, -apple-system, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: .88rem;
+  }
+  .bar .modes { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .bar button { font: inherit; color: var(--fg); background: var(--bg); border: 0; padding: 6px 12px; cursor: pointer; }
+  .bar .seg.on { background: var(--accent); color: var(--bg); }
+  .bar .stats { flex: 1 1 auto; min-width: 9em; }
+  .bar .acts { display: inline-flex; gap: 6px; }
+  .bar .act { border: 1px solid var(--line); border-radius: 8px; }
+  .bar .act#submit { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .bar button:focus-visible, button.opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button.opt {
+    width: 100%; text-align: left; font: inherit; color: inherit; background: transparent; cursor: pointer;
+    border: 1px solid transparent; border-radius: 8px; padding: 3px 8px; margin: 1px 0; line-height: 1.6;
+  }
+  button.opt:hover { background: var(--accent-bg); }
+  button.opt.sel { background: var(--accent-bg); border-color: var(--accent); }
+  button.opt.right { background: var(--ok-bg); border-color: var(--ok); }
+  button.opt.wrong { background: var(--bad-bg); border-color: var(--bad); }
+  button.opt .mark { margin-left: .4em; font-weight: bold; font-family: system-ui, sans-serif; }
+  button.opt.right .mark { color: var(--ok); }
+  button.opt.wrong .mark { color: var(--bad); }
+  li.q.done button.opt { cursor: default; }
+  li.q.done button.opt:hover:not(.right):not(.wrong) { background: transparent; }
+  .exp { margin: 4px 0 0 2.4em; padding: 6px 10px; border-radius: 8px; background: var(--row); font-size: .93rem; line-height: 1.6; }
+  .exp .res { margin-right: .5em; font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif; }
+  .exp.ok .res { color: var(--ok); }
+  .exp.no .res { color: var(--bad); }
+  .sec-score { font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif; font-size: .9rem; color: var(--muted); margin: 4px 0 0; }
 
-<section class="lesson" id="l41">
-  <div class="lesson-head">
-    <span class="no">41</span><span class="title">對牛彈琴</span>
-    <span class="src">出處：《弘明集》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">公明儀為牛彈清角之操，伏食如故，非牛不聞，不合其耳矣。轉為蚊虻之聲，孤犢之鳴，即掉尾奮耳，蹀躞而聽。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①公明儀：春秋時代魯國音樂家。</li><li>②清角之操：高雅的琴曲。操，樂曲名。</li><li>③伏食如故：仍舊低頭吃草。</li><li>④非：不是。</li><li>⑤不合其耳：不合牛的聽覺習慣，牛聽不慣。</li><li>⑥蚊虻之聲：像蚊蟲鼓翅的聲音。</li><li>⑦孤犢：離群的小牛。</li><li>⑧掉尾：搖擺尾巴。</li><li>⑨奮耳：豎起耳朵。</li><li>⑩蹀躞：小步來回走動的樣子。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>1. 助詞，的　2. 助詞，無義　3. 動詞，到　4. 代詞</div><div class="extra-box"><span class="tag">成語</span><b>高山流水</b><br>1. 形容樂曲的高妙　2. 後比喻知音的難遇</div><div class="extra-box"><span class="tag">成語</span><b>九牛一毛</b><br>許多牛身上的一根毛，比喻多數中的極少部分，對大體沒有什麼影響</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>公明儀對牛彈奏高雅的「清角之操」，牛的反應是？<div class="opts"><span>(A) 豎耳細聽</span><span>(B) 伏地吃草，毫無反應</span><span>(C) 受驚逃走</span><span>(D) 搖頭擺尾表示喜愛</span></div></li><li>公明儀後來改彈類似什麼聲音，牛才有反應？<div class="opts"><span>(A) 蚊虻與孤犢的鳴叫聲</span><span>(B) 高山流水的雅樂</span><span>(C) 雷電交加的聲音</span><span>(D) 其他牛隻的叫聲</span></div></li><li>「對牛彈琴」這句成語主要譏諷什麼樣的行為？<div class="opts"><span>(A) 講究音樂品味</span><span>(B) 對不懂道理或不感興趣的對象講述深奧的道理</span><span>(C) 刻意討好聽眾</span><span>(D) 堅持己見不知變通</span></div></li><li>下列何者與「九牛一毛」意義最接近？<div class="opts"><span>(A) 微不足道</span><span>(B) 舉足輕重</span><span>(C) 牛刀小試</span><span>(D) 對牛彈琴</span></div></li></ol></div>
-  </div>
+  .rule { font-weight: bold; margin: 8px 0; }
+  ol.qs { list-style: none; counter-reset: q; padding: 0; margin: 0; }
+  li.q { counter-increment: q; margin: 10px 0 14px; break-inside: avoid; page-break-inside: avoid; }
+  li.q .stem::before { content: "（　　）" counter(q) ". "; white-space: pre; }
+  li.q .stem { padding-left: 0; }
+  ul.opts { list-style: none; margin: 2px 0 0 2.4em; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 1em; }
+  ul.opts.one { grid-template-columns: 1fr; }
+  ul.opts .lab { margin-right: .2em; }
+  u { text-underline-offset: 3px; }
+  details.answers { margin-top: 10px; border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; }
+  details.answers > summary { cursor: pointer; font-weight: bold; color: var(--accent); font-size: 1.05rem; padding: 4px 0; }
+  table.key thead th { background: var(--accent-bg); }
+  table.key td.c { text-align: center; white-space: nowrap; }
+  table.key td.ans { color: var(--hl); font-weight: bold; }
+  table.key { font-size: .95rem; }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 36px; }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    ul.opts { grid-template-columns: 1fr; margin-left: 1.6em; }
+    .exp { margin-left: 1.6em; }
+    .bar .stats { flex-basis: 100%; order: 3; }
+    table.meaning tbody th { width: 6.5em; white-space: normal; }
+  }
+  @media print {
+    body { font-size: 12pt; }
+    main { max-width: none; padding: 0; }
+    nav.toc, .bar, .exp, .sec-score { display: none !important; }
+    .printonly { display: block; }
+    button.opt { border: 0; padding: 0; }
+    h2.newpage { page-break-before: always; }
+    h2, h3 { page-break-after: avoid; }
+    tr { page-break-inside: avoid; }
+    .tablewrap { overflow: visible; }
+    details.answers { border: none; padding: 0; }
+  }
+
+  .poem { text-align: center; margin: 8px 0 12px; font-size: 1.15rem; line-height: 1.9; }
+  .poem p { margin: 0; }
+  .poem .hl { font-size: 1.5rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>古文今讀 第 41–50 課</h1>
+<p class="subtitle">虛字整理：之、其、方、使、於、以、已、復、舉、悉、盡（複習）</p>
+<p class="lessons-line">第41課 對牛彈琴　第42課 月攘一雞　第43課 扣盤捫燭　第44課 道邊苦李　第45課 孟母戒子　第46課 狗國狗門　第47課 畫龍點睛　第48課 顏回好學　第49課 刻舟求劍　第50課 獻鳩放生</p>
+<p class="legend">出處：課本標註＝課本注釋與老師註記、補充投影片；原文＝課文內容；補充＝整理時另加的用法</p>
+<p class="legend">講義版（與 Word 檔相同，適合閱讀與列印）｜<a href="./">前往互動版</a>　｜　<a href="古文今讀41-50.docx">下載 Word 檔</a></p>
+<nav class="toc" aria-label="目錄">
+<a href="#handout">虛字整理</a><a href="#idioms">成語整理</a><a href="#notes">各課重點</a><a href="#practice">虛字練習</a><a href="#lessonqs">課文選擇題</a><a href="#answers">參考答案</a>
+</nav>
+<section id="handout">
+<h2>一、之（助詞、動詞、代詞，第41～50課）</h2>
+<div class="tablewrap"><table class="meaning orange"><thead><tr><th>意義（詞性）</th><th>例句（出處）</th></tr></thead><tbody><tr><th scope="row">助詞，的</th><td><div class="ex">清角<span class="hl">「之」</span>操、孤犢<span class="hl">「之」</span>鳴（的）<span class="src">（第41課，課本標註）</span></div><div class="ex">日<span class="hl">「之」</span>狀如銅盤<span class="src">（第43課，原文）</span></div><div class="ex">為小門於大門<span class="hl">「之」</span>側<span class="src">（第46課，課本標註）</span></div><div class="ex">是吾劍<span class="hl">「之」</span>所從墜<span class="src">（第49課，原文）</span></div><div class="ex">邯鄲<span class="hl">「之」</span>民<span class="src">（第50課，課本標註）</span></div></td></tr><tr><th scope="row">助詞，無意義（取消句子獨立性，湊足音節）</th><td><div class="ex">日<span class="hl">「之」</span>與鐘、籥亦遠矣<span class="src">（第43課，原文）</span></div><div class="ex">民知君<span class="hl">「之」</span>欲放<span class="hl">「之」</span>（第一個「之」）<span class="src">（第50課，原文）</span></div></td></tr><tr><th scope="row">動詞，到、往</th><td><div class="ex">至<span class="hl">「之」</span>市（複習）<span class="src">（第37課，補充）</span></div></td></tr><tr><th scope="row">代詞，指生而眇者</th><td><div class="ex">或告<span class="hl">「之」</span>曰<span class="src">（第43課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指王戎</th><td><div class="ex">人問<span class="hl">「之」</span><span class="src">（第44課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指李子</th><td><div class="ex">諸兒競走取<span class="hl">「之」</span><span class="src">（第44課，課本標註）</span></div><div class="ex">取<span class="hl">「之」</span>，信然<span class="src">（第44課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指孟子</th><td><div class="ex">呼而問<span class="hl">「之」</span>曰<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指眼睛</th><td><div class="ex">點<span class="hl">「之」</span>即飛去<span class="src">（第47課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指劍</th><td><div class="ex">從其所契者入水求<span class="hl">「之」</span><span class="src">（第49課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指邯鄲之民</th><td><div class="ex">厚賞<span class="hl">「之」</span><span class="src">（第50課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指鳩</th><td><div class="ex">君之欲放<span class="hl">「之」</span>、競而捕<span class="hl">「之」</span>、捕而放<span class="hl">「之」</span><span class="src">（第50課，課本標註）</span></div></td></tr></tbody></table></div>
+<p class="note">「之」的四種基本用法（助詞的、助詞無義、動詞到、代詞）見第41課標註；代詞「之」要依上下文判斷所指，這是最常考的重點。</p>
+<h2>二、其（代詞，第42、45、49課）</h2>
+<div class="tablewrap"><table class="meaning blue"><thead><tr><th>意義（詞性）</th><th>例句（出處）</th></tr></thead><tbody><tr><th scope="row">代詞，指偷雞的人</th><td><div class="ex">今有人日攘<span class="hl">「其」</span>鄰人之雞者（其：指偷雞者）<span class="src">（第42課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指偷雞這件事</th><td><div class="ex">如知<span class="hl">「其」</span>非義（其：指偷雞的行為）<span class="src">（第42課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指孟子</th><td><div class="ex"><span class="hl">「其」</span>母方織、<span class="hl">「其」</span>母知<span class="hl">「其」</span>諠也<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指孟母</th><td><div class="ex"><span class="hl">「其」</span>母引刀裂<span class="hl">「其」</span>織（裂其織：指孟母的布）<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指涉江者</th><td><div class="ex"><span class="hl">「其」</span>劍自舟中墜於水、從<span class="hl">「其」</span>所契者入水求之<span class="src">（第49課，課本標註）</span></div></td></tr><tr><th scope="row">代詞，指小牛／牛</th><td><div class="ex">不合<span class="hl">「其」</span>耳矣（其：指牛）<span class="src">（第41課，原文）</span></div></td></tr></tbody></table></div>
+<p class="note">「其」在本單元多為代詞，但指稱對象常隨句子改變（孟子、孟母、涉江者），要逐句判斷。</p>
+<h2>三、方、使、於（第45、46、50課）</h2>
+<div class="tablewrap"><table class="meaning orange"><thead><tr><th>意義（詞性）</th><th>例句（出處）</th></tr></thead><tbody><tr><th scope="row">方：副詞，正、正在（適）</th><td><div class="ex">其母<span class="hl">「方」</span>織<span class="src">（第45課，課本標註）</span></div><div class="ex"><span class="hl">「方」</span>興未艾（正在蓬勃發展）<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">方：名詞，法子、辦法</th><td><div class="ex">千<span class="hl">「方」</span>百計、教子有<span class="hl">「方」</span><span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">方：形容詞，方形的</th><td><div class="ex">圓顱<span class="hl">「方」</span>趾<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">使：動詞，出使</th><td><div class="ex">晏子<span class="hl">「使」</span>楚、<span class="hl">「使」</span>狗國者、今臣<span class="hl">「使」</span>楚<span class="src">（第46課，課本標註）</span></div></td></tr><tr><th scope="row">於：介詞，在</th><td><div class="ex">為小門<span class="hl">「於」</span>大門之側（在）<span class="src">（第46課，課本標註）</span></div></td></tr><tr><th scope="row">於：介詞，給</th><td><div class="ex">獻鳩<span class="hl">「於」</span>簡子；己所不欲，勿施<span class="hl">「於」</span>人<span class="src">（第50課，課本標註）</span></div></td></tr><tr><th scope="row">於：介詞，比</th><td><div class="ex">苛政猛<span class="hl">「於」</span>虎<span class="src">（第50課，課本標註）</span></div></td></tr><tr><th scope="row">於：介詞，被（置於動詞之後，表被動）</th><td><div class="ex">是法不信<span class="hl">「於」</span>民也<span class="src">（第50課，課本標註）</span></div></td></tr><tr><th scope="row">於：介詞，對於、向</th><td><div class="ex">君子<span class="hl">「於」</span>其所不知，蓋闕如也（對於）；問道<span class="hl">「於」</span>盲（向）<span class="src">（第50課，補充）</span></div></td></tr></tbody></table></div>
+<p class="note">「於」共六種用法：對於、向、在、比、給、被。「己所不欲，勿施於人」的「於」是「給」；被動的「於」放在動詞之後。</p>
+<h2>四、字詞辨析（第41～50課）</h2>
+<div class="tablewrap"><table class="meaning blue"><thead><tr><th>意義（詞性）</th><th>例句（出處）</th></tr></thead><tbody><tr><th scope="row">以：連詞／介詞，因為</th><td><div class="ex">楚國<span class="hl">「以」</span>晏子短（因為）<span class="src">（第46課，課本標註）</span></div><div class="ex"><span class="hl">「以」</span>其未嘗見而求之人也<span class="src">（第43課，課本標註）</span></div></td></tr><tr><th scope="row">已：動詞，停止</th><td><div class="ex">以待來年然後<span class="hl">「已」</span>、斯速<span class="hl">「已」</span>矣<span class="src">（第42課，課本標註）</span></div></td></tr><tr><th scope="row">斯：連詞，就、則</th><td><div class="ex">如知其非義，<span class="hl">「斯」</span>速已矣<span class="src">（第42課，課本標註）</span></div></td></tr><tr><th scope="row">因：副詞，就</th><td><div class="ex">人以為誕，<span class="hl">「因」</span>點其一<span class="src">（第47課，課本標註）</span></div></td></tr><tr><th scope="row">每：副詞，時常、總是</th><td><div class="ex"><span class="hl">「每」</span>曰：「點之即飛去。」<span class="src">（第47課，課本標註）</span></div></td></tr><tr><th scope="row">益：副詞，更加</th><td><div class="ex">門人<span class="hl">「益」</span>親<span class="src">（第48課，課本標註）</span></div></td></tr><tr><th scope="row">亡：通「無」，沒有</th><td><div class="ex">今也則<span class="hl">「亡」</span><span class="src">（第48課，課本標註）</span></div></td></tr><tr><th scope="row">蚤：通「早」</th><td><div class="ex"><span class="hl">「蚤」</span>死<span class="src">（第48課，課本標註）</span></div></td></tr><tr><th scope="row">復：副詞，又、再</th><td><div class="ex">有所失，<span class="hl">「復」</span>得（又）；孟子不<span class="hl">「復」</span>諠矣（再）<span class="src">（第45課，課本標註）</span></div></td></tr><tr><th scope="row">遽：副詞，立刻</th><td><div class="ex"><span class="hl">「遽」</span>契其舟<span class="src">（第49課，課本標註）</span></div></td></tr><tr><th scope="row">舉：全部的、整個的</th><td><div class="ex"><span class="hl">「舉」</span>國上下、<span class="hl">「舉」</span>世公認、<span class="hl">「舉」</span>國歡騰<span class="src">（第48課，課本標註）</span></div></td></tr><tr><th scope="row">悉：副詞，全（同「舉」）</th><td><div class="ex">遂「<span class="hl">「悉」</span>」罷之（課本第7頁）<span class="src">（第48課，課本標註）</span></div></td></tr><tr><th scope="row">自稱：予＝余＝吾；自謙：愚＝某＝僕</th><td><div class="ex"><span class="hl">「吾」</span>劍之所從墜（吾＝我）<span class="src">（第49課，課本標註）</span></div></td></tr></tbody></table></div>
+<p class="note">「舉」「悉」都可表示「全部」；「予、余、吾」是第一人稱「我」，「愚、某、僕」則為自謙之稱。</p>
+<h2>五、盡（複習，ㄐㄧㄣˋ）</h2>
+<div class="tablewrap"><table class="meaning orange"><thead><tr><th>意義（詞性）</th><th>例句（出處）</th></tr></thead><tbody><tr><th scope="row">動詞，完結、終止</th><td><div class="ex">無窮無<span class="hl">「盡」</span>、取之不<span class="hl">「盡」</span><span class="src">（複習，補充投影片）</span></div><div class="ex">春蠶到死絲方<span class="hl">「盡」</span>，蠟炬成灰淚始乾<span class="src">（複習，補充投影片）</span></div><div class="ex">消滅殆<span class="hl">「盡」</span><span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">動詞，全部用出，竭力、努力完成</th><td><div class="ex">竭<span class="hl">「盡」</span>所能、<span class="hl">「盡」</span>其所長<span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">動詞，隱沒</th><td><div class="ex">孤帆遠影碧山<span class="hl">「盡」</span>、白日依山<span class="hl">「盡」</span><span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">動詞，死亡</th><td><div class="ex">自<span class="hl">「盡」</span><span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">形容詞，完備的</th><td><div class="ex">詳<span class="hl">「盡」</span><span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">副詞，完全、全部</th><td><div class="ex"><span class="hl">「盡」</span>在不言中、應有<span class="hl">「盡」</span>有、二蟲<span class="hl">「盡」</span>為所吞<span class="src">（複習，補充投影片）</span></div></td></tr><tr><th scope="row">副詞，極端、達到極限</th><td><div class="ex"><span class="hl">「盡」</span>善<span class="hl">「盡」</span>美<span class="src">（複習，補充投影片）</span></div></td></tr></tbody></table></div>
+<p class="note">「盡」的詞性與意義很多，分類依補充投影片整理；辨別時先看它是動詞（終止、用盡、隱沒、死亡）還是副詞（完全、極端）。</p>
 </section>
-<section class="lesson" id="l42">
-  <div class="lesson-head">
-    <span class="no">42</span><span class="title">月攘一雞</span>
-    <span class="src">出處：《孟子》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">今有人日攘其鄰之雞者，或告之曰：「是非君子之道。」曰：「請損之，月攘一雞，以待來年然後已。」如知其非義，斯速已矣，何待來年？</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①攘：竊取。</li><li>②或：有人。</li><li>③損：減少。</li><li>④已：停止。</li><li>⑤斯：就。</li><li>⑥速：趕快。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「其」的用法</b><br>代詞，指偷雞的人</div><div class="extra-box"><span class="tag">名句精讀</span><b>當局者迷，旁觀者清</b><br>《舊唐書》</div><div class="extra-box"><span class="tag">名句精讀</span><b>不識廬山真面目，只緣身在此山中</b><br>蘇軾〈題西林壁〉，因為</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>文中偷雞的人打算用什麼方式改正自己的錯誤？<div class="opts"><span>(A) 立刻停止偷雞</span><span>(B) 每月只偷一隻，等明年才完全停止</span><span>(C) 向鄰居道歉賠償</span><span>(D) 請鄰居原諒</span></div></li><li>「如知其非義，斯速已矣，何待來年」這句話的用意是？<div class="opts"><span>(A) 稱讚偷雞者知錯能改</span><span>(B) 批評偷雞者明知不對卻拖延改過</span><span>(C) 勸人耐心等待時機</span><span>(D) 說明偷雞合乎情理</span></div></li><li>本文主要說明什麼道理？<div class="opts"><span>(A) 知錯就要立刻改正，不可拖延</span><span>(B) 做事要合乎法律規定</span><span>(C) 鄰居之間應互相體諒</span><span>(D) 行善要及時</span></div></li><li>「請損之」的「損」字意思與下列何者最接近？<div class="opts"><span>(A) 損害</span><span>(B) 減少</span><span>(C) 損失</span><span>(D) 損毀</span></div></li></ol></div>
-  </div>
+<section id="idioms">
+<h2>六、成語整理</h2>
+<h3>課文成語</h3><div class="tablewrap"><table class="meaning "><thead><tr><th>成語</th><th>意思</th><th>出處</th></tr></thead><tbody><tr><th scope="row">對牛彈琴</th><td>比喻對不懂道理的人講道理，或說話不看對象。</td><td>第41課</td></tr><tr><th scope="row">高山流水</th><td>1. 形容樂曲的高妙；2. 後比喻知音的難遇。</td><td>第41課，課本標註</td></tr><tr><th scope="row">九牛一毛</th><td>許多牛身上的一根毛，比喻多數中的極少部分，對大體沒有什麼影響。</td><td>第41課，課本標註</td></tr><tr><th scope="row">當局者迷，旁觀者清</th><td>當局者和旁觀者本來是指下棋的人和看棋的人；後比喻當事人太在意事情的利害得失，反而沒有旁觀者客觀，可以看得清楚。</td><td>第42課，《舊唐書》</td></tr><tr><th scope="row">亡羊補牢</th><td>丟失了羊，趕快修補羊圈，還不算晚；比喻犯錯後及時更正，想辦法補救，以防止再受損失。</td><td>第42課，《戰國策》</td></tr><tr><th scope="row">扣盤捫燭</th><td>比喻認識不確切而產生誤會。</td><td>第43課</td></tr><tr><th scope="row">投我以桃，報之以李</th><td>比喻人際交往中要有來有往，禮尚往來；一般用在好事上。</td><td>第44課，《詩經》</td></tr><tr><th scope="row">方興未艾</th><td>正在蓬勃發展。</td><td>第45課，課本標註</td></tr><tr><th scope="row">圓顱方趾</th><td>人皆頭圓足方，故用以代稱人類。</td><td>第45課，課本標註</td></tr><tr><th scope="row">暴虎馮河</th><td>暴，徒手搏鬥；馮，徒步渡河。指空手與虎搏鬥，不靠舟船渡河，比喻人有勇而無謀。</td><td>第46課，課本標註</td></tr><tr><th scope="row">畫龍點睛</th><td>繪畫或作文時，在最關鍵之處加上一筆，使全體更加生動傳神。</td><td>第47課</td></tr><tr><th scope="row">刻舟求劍</th><td>比喻拘泥固執，不知變通。</td><td>第49課</td></tr></tbody></table></div>
+<h3>補充相關成語</h3><div class="tablewrap"><table class="meaning blue"><thead><tr><th>成語</th><th>意思</th><th>出處</th></tr></thead><tbody><tr><th scope="row">牛頭不對馬嘴</th><td>比喻回答的內容和問題所要求的答案不相關；或兩件事情不相符合。</td><td>第41課，課本補充</td></tr><tr><th scope="row">牛牽到北京還是牛</th><td>比喻人的個性固執不通，難以改變。</td><td>第41課，課本補充</td></tr><tr><th scope="row">不識廬山真面目，只緣身在此山中</th><td>因為身在山中，反而看不清山的全貌；比喻局限於局部，看不清事物真相。（蘇軾〈題西林壁〉）</td><td>第42課，課本標註</td></tr><tr><th scope="row">人誰無過？過而能改，善莫大焉</th><td>誰沒有過錯？有過錯而能改正，是最大的好事。《左傳》</td><td>第42課，課本補充</td></tr><tr><th scope="row">捫心自問</th><td>撫摸自己的胸口自問，指自我反省檢討。</td><td>第43課，課本標註</td></tr><tr><th scope="row">狗尾續貂</th><td>「貂」是毛皮非常珍貴的動物。裝飾在官帽上的貂尾不夠用，便用狗尾代替；比喻把不好的東西接續在好東西後面，前後不相稱。</td><td>第46課，成語教室</td></tr><tr><th scope="row">偷雞摸狗</th><td>比喻偷竊或偷偷摸摸，不夠光明正大的行為。</td><td>第46課，成語教室</td></tr><tr><th scope="row">雞鳴狗盜</th><td>學雞叫騙人，學狗進行偷竊；比喻有某種卑微技能的人，或指人具有不足道的技能本領。</td><td>第46課，成語教室</td></tr><tr><th scope="row">大水沖倒龍王廟</th><td>比喻自己人不認識自己人，或自己人彼此之間發生誤會。</td><td>第47課，趣味諺語</td></tr><tr><th scope="row">龍游淺水遭蝦戲，虎落平原被犬欺</th><td>比喻有權勢的人一旦失勢，就會受到小人欺侮。</td><td>第47課，趣味諺語（補充）</td></tr><tr><th scope="row">抱殘守缺</th><td>守著殘缺的東西不放；形容固守著舊有的思想或事物，不肯改進或接受新的事物。</td><td>第49課，成語教室</td></tr><tr><th scope="row">食古不化</th><td>學了古人的知識而不能理解、應用，如同吃了東西不能消化一樣；比喻一味守舊而不知變通。</td><td>第49課，成語教室</td></tr><tr><th scope="row">膠柱鼓瑟</th><td>將瑟的弦柱黏住，鼓瑟時就不能調節音律；比喻頑固而不知變通。</td><td>第49課，課本標註</td></tr><tr><th scope="row">削足適履</th><td>把腳削小來適合鞋子的尺寸；比喻不顧實際的狀況，勉強遷就某事，已到了極不合理的程度。</td><td>第49課，課本標註</td></tr><tr><th scope="row">察納雅言</th><td>接受並採納正直、合理的意見。</td><td>第50課，課本標註</td></tr></tbody></table></div>
 </section>
-<section class="lesson" id="l43">
-  <div class="lesson-head">
-    <span class="no">43</span><span class="title">扣盤捫燭</span>
-    <span class="src">出處：蘇軾〈日喻〉</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">生而眇者不識日，問之有目者。或告之曰：「日之狀如銅盤。」扣盤而得其聲。他日聞鐘，以為日也。或告之曰：「日之光如燭。」捫燭而得其形。他日揣籥，以為日也。日之與鐘籥亦遠矣，而眇者不知其異，以其未嘗見而求之人也。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①眇：雙目失明。</li><li>②識：認識。</li><li>③或：有人。</li><li>④扣：敲、擊。</li><li>⑤揣：撫摸。</li><li>⑥籥：古樂器名，竹製，類似短笛。</li><li>⑦捫：撫摸。</li><li>⑧異：不同。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>代詞，指生而眇者／代詞，指銅盤</div><div class="extra-box"><span class="tag">延伸</span><b>捫心自問</b><br>指自我反省檢討</div><div class="extra-box"><span class="tag">主旨</span><b>由狀推其聲，由光推其形</b><br>比喻認識不確切而產生誤會（先敘後議）</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>生而眇者為何會把鐘聲當成太陽？<div class="opts"><span>(A) 他曾經聽過鐘聲</span><span>(B) 有人告訴他太陽的形狀像銅盤，他敲盤得其聲，後聽到鐘聲便誤以為是太陽</span><span>(C) 他故意欺騙別人</span><span>(D) 鐘聲與陽光很相似</span></div></li><li>本文以「扣盤捫燭」比喻什麼？<div class="opts"><span>(A) 認識片面、未得要領而產生誤會</span><span>(B) 勤學好問的精神</span><span>(C) 以訛傳訛的危害</span><span>(D) 追求真理的堅持</span></div></li><li>作者用「生而眇者」的例子，主要用意是？<div class="opts"><span>(A) 嘲笑盲人的無知</span><span>(B) 說明未經親身體驗、僅憑片面資訊推想事物，容易產生誤會</span><span>(C) 讚美盲人善於想像</span><span>(D) 強調視覺的重要</span></div></li><li>「捫心自問」的意思是？<div class="opts"><span>(A) 撫摸胸口</span><span>(B) 自我反省檢討</span><span>(C) 向人求教</span><span>(D) 假裝鎮定</span></div></li></ol></div>
-  </div>
+<section id="notes">
+<h2 class="newpage">各課重點</h2>
+<h3 class="lesson">第41課　對牛彈琴<small>　《弘明集》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">公明儀</th><td>春秋時代魯國音樂家。</td></tr><tr><th scope="row">清角</th><td>樂曲名，高雅的曲子。</td></tr><tr><th scope="row">操</th><td>琴曲。</td></tr><tr><th scope="row">如故</th><td>照舊。</td></tr><tr><th scope="row">非</th><td>不是。</td></tr><tr><th scope="row">蚊虻</th><td>吸血的蚊蟲與牛虻。</td></tr><tr><th scope="row">犢</th><td>小牛。</td></tr><tr><th scope="row">掉</th><td>搖擺。</td></tr><tr><th scope="row">奮</th><td>豎起來。</td></tr><tr><th scope="row">蹀躞</th><td>小步來回走動的樣子。</td></tr></tbody></table></div><p class="note">原文：公明儀為牛彈清角之操，伏食如故。非牛不聞，不合其耳矣。轉為蚊虻之聲，孤犢之鳴，即掉尾奮耳，蹀躞而聽。</p><p class="note">語譯：公明儀為牛彈奏〈清角〉這首高雅的琴曲，牛依舊低著頭吃草。不是牛沒有聽見樂音，而是樂曲不適合給牛聽。後來公明儀改用古琴彈出蚊蟲、牛虻鼓翅的聲音，以及離群落單小牛的悲鳴聲，牛就立刻停止吃草，搖著尾巴，豎起耳朵，小步來回走動，注意聽著。</p><p class="note">「對牛彈琴」：比喻對不懂道理的人講道理，或說話不看對象。</p><p class="note">牛聽不進〈清角〉，不是牛聽不到，而是「不合其耳」；改彈蚊虻、孤犢之聲才有反應，說明溝通要配合對象。</p><p class="note">補充：牛頭不對馬嘴（回答與問題不相關）、牛牽到北京還是牛（比喻個性固執難改）、九牛一毛、高山流水（課本標註）。</p>
+<h3 class="lesson">第42課　月攘一雞<small>　《孟子》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">日</th><td>每天。</td></tr><tr><th scope="row">攘</th><td>偷竊。</td></tr><tr><th scope="row">或</th><td>有人。</td></tr><tr><th scope="row">非</th><td>不是。</td></tr><tr><th scope="row">損</th><td>減少。</td></tr><tr><th scope="row">來年</th><td>明年。</td></tr><tr><th scope="row">已</th><td>停止。</td></tr><tr><th scope="row">非義</th><td>不合道德。</td></tr><tr><th scope="row">斯</th><td>就、則。</td></tr></tbody></table></div><p class="note">原文：今有人日攘其鄰人之雞者，或告之曰：「是非君子之道。」曰：「請損之，月攘一雞，以待來年，然後已。」「如知其非義，斯速已矣，何待來年！」</p><p class="note">語譯：現在有一個人，每天偷鄰居一隻雞，有人告訴他說：「這不是君子應有的行為。」他說：「讓我減少一些，每個月偷一隻雞，到明年就停止不偷了。」如果知道這種行為不合乎道德，就應該趕快停止，為什麼要等到明年呢？</p><p class="note">主旨：知錯就要立即改正，不可拖延。</p><p class="note">「其」指偷雞者；「如知其非義」的「其」指偷雞這件事；「已」是停止，「斯」是「就」。</p><p class="note">名句：當局者迷，旁觀者清（《舊唐書》）；不識廬山真面目，只緣身在此山中（蘇軾〈題西林壁〉）；亡羊而補牢，未為遲也（《戰國策》）；人誰無過？過而能改，善莫大焉（《左傳》）。</p>
+<h3 class="lesson">第43課　扣盤捫燭<small>　蘇軾〈日喻〉</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">眇</th><td>雙目失明。</td></tr><tr><th scope="row">日</th><td>太陽。</td></tr><tr><th scope="row">或</th><td>有人。</td></tr><tr><th scope="row">扣</th><td>敲、擊。</td></tr><tr><th scope="row">捫</th><td>撫摸。</td></tr><tr><th scope="row">揣</th><td>摸。</td></tr><tr><th scope="row">籥</th><td>古樂器名，用竹子做成，類似短笛的樂器。</td></tr><tr><th scope="row">異</th><td>不同的。</td></tr><tr><th scope="row">以</th><td>因為。</td></tr><tr><th scope="row">未嘗</th><td>不曾。</td></tr></tbody></table></div><p class="note">原文：生而眇者不識日，問之有目者，或告之曰：「日之狀如銅盤。」扣盤而得其聲。他日聞鐘，以為日也。或告之曰：「日之光如燭。」捫燭而得其形。他日揣籥，以為日也。日之與鐘、籥亦遠矣，而眇者不知其異，以其未嘗見而求之人也。</p><p class="note">語譯：有個天生失明的人，不知道太陽是什麼樣子，就去問看得見的人。有人告訴他：「太陽的形狀像銅盤。」他敲敲銅盤，聽到它發出的聲音；後來有一天聽到鐘聲，就以為那是太陽。又有人告訴他：「太陽的光像蠟燭的光芒。」他摸摸蠟燭，了解它的形狀；後來有一天摸到籥，就以為那是太陽。太陽與鐘、籥相差很遠，但失明的人不知道它們的差異，是因為他不曾親眼見過，只能向別人打聽的緣故。</p><p class="note">寫作結構：先敘後議，由「狀」推「聲」、由「光」推「形」，一步步誤會。</p><p class="note">比喻認識不確切而產生誤會（課本標註）；未經親身體驗，只憑他人片面之詞推想，容易失真。</p><p class="note">補充：捫心自問——摸著自己的胸口自問，指自我反省檢討。</p>
+<h3 class="lesson">第44課　道邊苦李<small>　《世說新語》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">王戎</th><td>西晉臨沂人，為竹林七賢之一。</td></tr><tr><th scope="row">嘗</th><td>曾經。</td></tr><tr><th scope="row">諸</th><td>眾、許多。</td></tr><tr><th scope="row">子</th><td>果實。</td></tr><tr><th scope="row">折枝</th><td>壓彎了樹枝。</td></tr><tr><th scope="row">競走</th><td>爭相奔去。</td></tr><tr><th scope="row">唯</th><td>只有。</td></tr><tr><th scope="row">信然</th><td>果然如此。</td></tr></tbody></table></div><p class="note">原文：王戎七歲，嘗與諸小兒遊。看道邊李樹多子折枝，諸兒競走取之，唯戎不動。人問之，答曰：「樹在道邊而多子，此必苦李。」取之，信然。</p><p class="note">語譯：王戎七歲的時候，曾經和許多小朋友出去遊玩，看見路邊的李子樹結滿果實，多到壓彎了樹枝，那些孩子爭相跑去摘李子，只有王戎站著不動。有人問他為什麼不去摘，王戎回答說：「李子樹長在路邊還能結實纍纍，這些李子一定是苦的。」於是有人摘來嚐一嚐，果然都是味道苦澀的李子。</p><p class="note">王戎能觀察、推理，不隨眾盲從；由「長在道邊卻結滿果實」推知無人採摘，必是苦李。</p><p class="note">名句：投我以桃，報之以李（《詩經》）——比喻禮尚往來，多用於好事。</p><p class="note">「之」的指稱：問之（指王戎）、取之（指李子）。</p>
+<h3 class="lesson">第45課　孟母戒子<small>　《韓詩外傳》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">孟子</th><td>名軻，字子輿，戰國時鄒人，儒家思想的發揚者，後世尊為「亞聖」。</td></tr><tr><th scope="row">少時</th><td>小時候。</td></tr><tr><th scope="row">方</th><td>正。</td></tr><tr><th scope="row">輟</th><td>中止。</td></tr><tr><th scope="row">進</th><td>進行，指繼續讀書。</td></tr><tr><th scope="row">諠</th><td>忘記。</td></tr><tr><th scope="row">何為</th><td>為什麼。</td></tr><tr><th scope="row">失</th><td>忘記。</td></tr><tr><th scope="row">引</th><td>拿起。</td></tr><tr><th scope="row">裂</th><td>割斷。</td></tr><tr><th scope="row">戒</th><td>告誡、警告。</td></tr><tr><th scope="row">自是</th><td>從此。</td></tr></tbody></table></div><p class="note">原文：孟子少時誦，其母方織。孟子輟然中止，乃復進。其母知其諠也，呼而問之曰：「何為中止？」對曰：「有所失，復得。」其母引刀裂其織，以此戒之。自是之後，孟子不復諠矣。</p><p class="note">語譯：孟軻小時候背誦詩文，他的母親正在一旁織布。孟軻忽然停止背誦，然後再繼續背下去。孟母知道他是因為分心而遺忘了書中的內容，於是把他叫來問道：「為什麼中途停止背書？」孟子回答說：「有些地方忘記了，後來又記起來了。」這時孟母拿起刀割斷她剛織好的布，用這種方法告誡他讀書不能半途而廢。從此以後，孟子讀書再也不忘失了。</p><p class="note">孟母割斷織布，比喻讀書若半途而廢，就會前功盡棄；要專心致志。</p><p class="note">「其」都是代詞：其母（指孟子）、裂其織（指孟母）。</p><p class="note">補充：方興未艾（正在蓬勃發展）、圓顱方趾（人皆頭圓足方，用以代稱人類）（課本標註）。</p>
+<h3 class="lesson">第46課　狗國狗門<small>　《晏子春秋》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">晏子</th><td>春秋時代齊國名臣，以足智多謀和能言善辯為世人所稱道。</td></tr><tr><th scope="row">使</th><td>出使。</td></tr><tr><th scope="row">以</th><td>因為。</td></tr><tr><th scope="row">短</th><td>身材矮小。</td></tr><tr><th scope="row">為</th><td>做、設置。</td></tr><tr><th scope="row">延</th><td>請。</td></tr><tr><th scope="row">儐者</th><td>負責接待賓客的人。</td></tr><tr><th scope="row">更道</th><td>換一條路。</td></tr></tbody></table></div><p class="note">原文：晏子使楚，楚國以晏子短，為小門於大門之側而延晏子。晏子不入，曰：「使狗國者，從狗門入；今臣使楚，不當從此門入。」儐者更道，從大門入。</p><p class="note">語譯：晏子代表齊國出使楚國，楚國人因為他身材矮小，在城門旁邊特意開了一個小門，請晏子從小門中進去。晏子不進去，說：「只有出使狗國的人，才會從狗洞中進去。今天我出使楚國，不應該從狗門中進去。」於是負責接待晏子的人更換了另一條路，請晏子從大門中進去。</p><p class="note">楚人想羞辱晏子，晏子以「使狗國者從狗門入」機智反擊，展現足智多謀、能言善辯。</p><p class="note">「使」字三次都是「出使」；「以晏子短」的「以」是「因為」。</p><p class="note">補充：暴虎馮河（暴：徒手搏鬥；馮：徒步渡河，比喻有勇無謀）；狗尾續貂、雞鳴狗盜、偷雞摸狗（成語教室）。</p>
+<h3 class="lesson">第47課　畫龍點睛<small>　《水衡記》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">張僧繇</th><td>南朝梁人，當時有名的大畫家。</td></tr><tr><th scope="row">金陵</th><td>今南京。</td></tr><tr><th scope="row">於</th><td>在。</td></tr><tr><th scope="row">每</th><td>時常、總是。</td></tr><tr><th scope="row">以為</th><td>認為。</td></tr><tr><th scope="row">誕</th><td>虛妄、荒唐。</td></tr><tr><th scope="row">因</th><td>就。</td></tr><tr><th scope="row">須臾</th><td>一會兒。</td></tr><tr><th scope="row">破</th><td>擊破牆壁。</td></tr><tr><th scope="row">皆</th><td>都。</td></tr></tbody></table></div><p class="note">原文：張僧繇於金陵安樂寺畫四龍於壁，不點睛。每曰：「點之即飛去。」人以為誕，因點其一。須臾，雷電破壁，一龍乘雲上天，不點睛者皆在。</p><p class="note">語譯：南朝著名的畫家張僧繇，在金陵安樂寺的牆上畫了四隻白龍，卻沒有點上黑眼珠。他常說：「點上眼睛後，龍立刻就會飛走。」大家聽了，都覺得他的話荒誕虛妄，張僧繇就點了其中一隻龍的眼睛。不一會兒，天上電閃雷鳴，擊穿了牆壁，點睛的龍立刻駕著雲霧飛上天去，而未點上眼睛的龍都還留在牆上。</p><p class="note">畫龍點睛：繪畫或作文時，在最關鍵之處加上一筆，使全體更加生動傳神。</p><p class="note">「點之即飛去」的「之」指眼睛；「因」是「就」；四龍點一，牆上還剩 4－1＝3 條龍。</p><p class="note">補充：轉瞬、彈指、一眨眼、俄而、剎那（形容時間短暫）；趣味諺語：大水沖倒龍王廟（自己人不認識自己人）。</p>
+<h3 class="lesson">第48課　顏回好學<small>　《史記》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">回</th><td>顏回，又稱顏淵，是孔子最器重與喜愛的得意門生，以德性修養著稱。</td></tr><tr><th scope="row">蚤</th><td>早。</td></tr><tr><th scope="row">慟</th><td>過度悲傷、哀痛。</td></tr><tr><th scope="row">門人</th><td>弟子。</td></tr><tr><th scope="row">益</th><td>更加。</td></tr><tr><th scope="row">魯哀公</th><td>魯國國君。</td></tr><tr><th scope="row">孰</th><td>誰。</td></tr><tr><th scope="row">遷</th><td>轉移。</td></tr><tr><th scope="row">貳</th><td>重複。</td></tr><tr><th scope="row">過</th><td>過失、錯誤。</td></tr><tr><th scope="row">亡</th><td>無。</td></tr></tbody></table></div><p class="note">原文：回年二十九，髮盡白，蚤死。孔子哭之慟，曰：「自吾有回，門人益親。」魯哀公問：「弟子孰為好學？」孔子對曰：「有顏回者好學，不遷怒，不貳過。不幸短命死矣，今也則亡。」</p><p class="note">語譯：顏回二十九歲，頭髮全白了，年紀輕輕就過世了。孔子極為悲傷地說：「自從我有了弟子顏回，學生們以顏回為榜樣，更加親近我了。」魯哀公問孔子：「學生之中，誰是最好學的？」孔子回答：「有個叫顏回的弟子好學，從不把自己的怒氣發洩在他人身上，不重犯同樣的錯誤，可惜命短已死了，現在已經沒有像顏回那樣好學的人了。」</p><p class="note">「不遷怒，不貳過」：不把怒氣發洩到別人身上，不重犯同樣的錯誤。</p><p class="note">「亡」通「無」，「蚤」通「早」，「益」是副詞，更加。</p><p class="note">補充：孔子，名丘，字仲尼，春秋魯國人，儒家創始人，尊稱「至聖先師」；自稱：予＝余＝吾；自謙：愚＝某＝僕。</p>
+<h3 class="lesson">第49課　刻舟求劍<small>　《呂氏春秋》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">涉</th><td>乘船渡水。</td></tr><tr><th scope="row">其</th><td>他的。</td></tr><tr><th scope="row">墜</th><td>掉落。</td></tr><tr><th scope="row">遽</th><td>立刻、急忙。</td></tr><tr><th scope="row">契</th><td>雕刻。</td></tr><tr><th scope="row">行</th><td>移動。</td></tr><tr><th scope="row">惑</th><td>奇怪、困惑。</td></tr></tbody></table></div><p class="note">原文：楚人有涉江者，其劍自舟中墜於水，遽契其舟，曰：「是吾劍之所從墜。」舟止，從其所契者入水求之。舟已行矣，而劍不行，求劍若此，不亦惑乎？</p><p class="note">語譯：有一個楚國人乘船渡江時，他的劍從船上掉落到水裡，他急忙用刀在船身上刻下一個記號，說：「我的劍就是從這裡掉下去的。」船停了以後，他便從刻著記號的地方跳進水中，尋找失落的寶劍。船已經移動了，但落水的劍卻不會移動，這樣找劍，不是很奇怪嗎？</p><p class="note">刻舟求劍：比喻拘泥固執，不知變通。</p><p class="note">同類成語：膠柱鼓瑟、削足適履、抱殘守缺、食古不化；參照第32頁〈荊人涉澭〉、第40頁〈鄭人買履〉。</p><p class="note">「其劍」「其舟」的「其」都指涉江者。</p>
+<h3 class="lesson">第50課　獻鳩放生<small>　《列子》</small></h3><div class="tablewrap"><table class="meaning "><thead><tr><th>詞語</th><th>意思</th></tr></thead><tbody><tr><th scope="row">邯鄲</th><td>春秋時代晉國重要都城。</td></tr><tr><th scope="row">鳩</th><td>外形像鴿子，灰色有斑紋，尾短翼長的一種鳥。</td></tr><tr><th scope="row">簡子</th><td>趙簡子，春秋時晉國大夫。</td></tr><tr><th scope="row">客</th><td>門客。</td></tr><tr><th scope="row">正旦</th><td>農曆正月一日。</td></tr><tr><th scope="row">放生</th><td>釋放已經被捉獲的動物，讓牠們重獲自由的善舉。</td></tr><tr><th scope="row">競</th><td>爭相。</td></tr><tr><th scope="row">補</th><td>補救、彌補。</td></tr><tr><th scope="row">然</th><td>表贊同。</td></tr></tbody></table></div><p class="note">原文：邯鄲之民，以正月之旦獻鳩於簡子，簡子大悅，厚賞之。客問其故，簡子曰：「正旦放生，示有恩也。」客曰：「民知君之欲放之，故競而捕之，死者眾矣。君如欲生之，不若禁民勿捕。捕而放之，恩過不相補矣。」簡子曰：「然。」</p><p class="note">語譯：春秋時期，晉國都城邯鄲的百姓，每到大年初一就會獻上斑鳩給大臣趙簡子，趙簡子非常高興，常常賞賜給獻鳩的人。趙簡子的門客問他為什麼要這樣做，趙簡子回答說：「元旦放生斑鳩，可以顯示我愛護生靈的恩德啊！」門客說：「百姓們知道您的心思，所以爭相捕捉斑鳩，造成斑鳩死傷慘重。您如果真的想要愛護生命，不如下道命令禁止百姓捕獵斑鳩。不然抓了鳥再放了鳥，恩德還抵不過罪過啊！」簡子說：「你說得對！」</p><p class="note">諷刺只做表面善事、方法錯誤，反而造成更大傷害；真正愛護生命應「禁民勿捕」。</p><p class="note">「放之」「捕之」的「之」都指鳩；「厚賞之」的「之」指邯鄲之民。</p><p class="note">補充：察納雅言（接受並採納正直的意見）、從善如流；「於」有六種用法（見虛字整理）。</p>
+<h3>字音辨析</h3><div class="tablewrap"><table class="meaning "><thead><tr><th>字</th><th>讀音</th><th>例詞（出處）</th></tr></thead><tbody><tr><th scope="row">蚊虻</th><td>ㄨㄣˊ　ㄇㄥˊ</td><td>蚊虻之聲（第41課）</td></tr><tr><th scope="row">犢</th><td>ㄉㄨˊ</td><td>孤犢之鳴（第41課）</td></tr><tr><th scope="row">蹀躞</th><td>ㄉㄧㄝˊ　ㄒㄧㄝˋ</td><td>蹀躞而聽（第41課）</td></tr><tr><th scope="row">攘</th><td>ㄖㄤˇ</td><td>日攘其鄰人之雞（第42課）</td></tr><tr><th scope="row">捫</th><td>ㄇㄣˊ</td><td>捫燭而得其形（第43課）</td></tr><tr><th scope="row">眇</th><td>ㄇㄧㄠˇ</td><td>生而眇者（第43課）</td></tr><tr><th scope="row">揣</th><td>ㄔㄨㄞˇ</td><td>他日揣籥（第43課）</td></tr><tr><th scope="row">籥</th><td>ㄩㄝˋ</td><td>他日揣籥（第43課）</td></tr><tr><th scope="row">王戎</th><td>ㄨㄤˊ　ㄖㄨㄥˊ</td><td>王戎七歲（第44課）</td></tr><tr><th scope="row">嘗</th><td>ㄔㄤˊ</td><td>嘗與諸小兒遊（第44課）</td></tr><tr><th scope="row">諠</th><td>ㄒㄨㄢ</td><td>其母知其諠也（第45課）</td></tr><tr><th scope="row">輟</th><td>ㄔㄨㄛˋ</td><td>孟子輟然中止（第45課）</td></tr><tr><th scope="row">儐</th><td>ㄅㄧㄣˋ</td><td>儐者更道（第46課）</td></tr><tr><th scope="row">延</th><td>ㄧㄢˊ</td><td>延晏子（第46課）</td></tr><tr><th scope="row">誕</th><td>ㄉㄢˋ</td><td>人以為誕（第47課）</td></tr><tr><th scope="row">須臾</th><td>ㄒㄩ　ㄧㄩˊ</td><td>須臾，雷電破壁（第47課）</td></tr><tr><th scope="row">蚤</th><td>ㄗㄠˇ</td><td>蚤死（第48課）</td></tr><tr><th scope="row">慟</th><td>ㄊㄨㄥˋ</td><td>孔子哭之慟（第48課）</td></tr><tr><th scope="row">孰</th><td>ㄕㄨˊ</td><td>弟子孰為好學（第48課）</td></tr><tr><th scope="row">遽</th><td>ㄐㄩˋ</td><td>遽契其舟（第49課）</td></tr><tr><th scope="row">契</th><td>ㄑㄧˋ</td><td>遽契其舟（第49課）</td></tr><tr><th scope="row">邯鄲</th><td>ㄏㄢˊ　ㄉㄢ</td><td>邯鄲之民（第50課）</td></tr><tr><th scope="row">鳩</th><td>ㄐㄧㄡ</td><td>獻鳩於簡子（第50課）</td></tr><tr><th scope="row">盡</th><td>ㄐㄧㄣˋ</td><td>盡善盡美（複習）</td></tr></tbody></table></div>
 </section>
-<section class="lesson" id="l44">
-  <div class="lesson-head">
-    <span class="no">44</span><span class="title">道邊苦李</span>
-    <span class="src">出處：《世說新語》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">王戎七歲，嘗與諸小兒遊，看道邊李樹多子折枝，諸兒競走取之，唯戎不動。人問之，答曰：「樹在道邊而多子，此必苦李。」取之，信然。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①嘗：曾經。</li><li>②競走：爭相奔跑。</li><li>③折枝：壓彎了樹枝。</li><li>④信然：果然如此。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">名句精讀</span><b>投我以桃，報之以李</b><br>《詩經》——比喻人際交往中的贈與或付出，一般用在好事上，是禮尚往來的意思。</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>王戎判斷路邊李樹是苦李的依據為何？<div class="opts"><span>(A) 親自摘來嚐過</span><span>(B) 聽別人說的</span><span>(C) 樹長在路邊卻果實纍纍，可推知無人採摘，必是苦李</span><span>(D) 看樹葉的顏色判斷</span></div></li><li>本文主要描述王戎幼時具有什麼特質？<div class="opts"><span>(A) 貪吃</span><span>(B) 觀察力敏銳，善於推理判斷</span><span>(C) 體弱多病</span><span>(D) 個性衝動</span></div></li><li>「諸兒競走取之，唯戎不動」顯示王戎與其他孩童的差異在於？<div class="opts"><span>(A) 王戎跑得比較慢</span><span>(B) 王戎不喜歡吃李子</span><span>(C) 王戎能冷靜觀察，不隨眾盲從</span><span>(D) 王戎害怕受傷</span></div></li><li>「投我以桃，報之以李」比喻的意思最接近下列何者？<div class="opts"><span>(A) 禮尚往來</span><span>(B) 恩將仇報</span><span>(C) 得寸進尺</span><span>(D) 以德報怨</span></div></li></ol></div>
-  </div>
+<section id="practice">
+<h2 class="newpage">古文今讀 41–50 課　虛字練習</h2>
+<p class="infoline printonly">班級：＿＿＿＿　座號：＿＿＿＿　姓名：＿＿＿＿＿＿　　得分：＿＿＿＿</p>
+<p class="rule">選擇題（每題 5 分，共 100 分）。粗體加底線的字為題目所問的字。</p>
+<h3 class="lesson">虛字練習（課文中的虛字）</h3>
+<ol class="qs">
+<li class="q"><div class="stem">「或告<u><b>之</b></u>曰：『日之狀如銅盤。』」的「<u><b>之</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 太陽</li><li><span class="lab">(B)</span> 生而眇者</li><li><span class="lab">(C)</span> 銅盤</li><li><span class="lab">(D)</span> 有目者</li></ul></li>
+<li class="q"><div class="stem">「人問<u><b>之</b></u>，答曰」的「<u><b>之</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 李子</li><li><span class="lab">(B)</span> 王戎</li><li><span class="lab">(C)</span> 樹</li><li><span class="lab">(D)</span> 小兒</li></ul></li>
+<li class="q"><div class="stem">「取<u><b>之</b></u>，信然」的「<u><b>之</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 李子</li><li><span class="lab">(B)</span> 王戎</li><li><span class="lab">(C)</span> 樹枝</li><li><span class="lab">(D)</span> 路人</li></ul></li>
+<li class="q"><div class="stem">「點<u><b>之</b></u>即飛去」的「<u><b>之</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 龍</li><li><span class="lab">(B)</span> 牆壁</li><li><span class="lab">(C)</span> 眼睛</li><li><span class="lab">(D)</span> 畫</li></ul></li>
+<li class="q"><div class="stem">「捕而放<u><b>之</b></u>」的「<u><b>之</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 簡子</li><li><span class="lab">(B)</span> 鳩</li><li><span class="lab">(C)</span> 百姓</li><li><span class="lab">(D)</span> 門客</li></ul></li>
+<li class="q"><div class="stem">「為小門於大門<u><b>之</b></u>側」的「<u><b>之</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 的</li><li><span class="lab">(B)</span> 到、往</li><li><span class="lab">(C)</span> 他</li><li><span class="lab">(D)</span> 無意義</li></ul></li>
+<li class="q"><div class="stem">「民知君<u><b>之</b></u>欲放之」的「君<u><b>之</b></u>欲放之」第一個「<u><b>之</b></u>」，用法是？</div><ul class="opts"><li><span class="lab">(A)</span> 代詞，指鳩</li><li><span class="lab">(B)</span> 助詞，的</li><li><span class="lab">(C)</span> 助詞，無意義</li><li><span class="lab">(D)</span> 動詞，到</li></ul></li>
+<li class="q"><div class="stem">「<u><b>其</b></u>母方織」的「<u><b>其</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 孟子</li><li><span class="lab">(B)</span> 孟母</li><li><span class="lab">(C)</span> 織布</li><li><span class="lab">(D)</span> 老師</li></ul></li>
+<li class="q"><div class="stem">「其母引刀裂<u><b>其</b></u>織」的「<u><b>其</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 孟子</li><li><span class="lab">(B)</span> 孟母</li><li><span class="lab">(C)</span> 孟子的老師</li><li><span class="lab">(D)</span> 鄰人</li></ul></li>
+<li class="q"><div class="stem">「如知<u><b>其</b></u>非義」的「<u><b>其</b></u>」，指的是？</div><ul class="opts"><li><span class="lab">(A)</span> 偷雞這件事</li><li><span class="lab">(B)</span> 鄰居</li><li><span class="lab">(C)</span> 君子</li><li><span class="lab">(D)</span> 告知者</li></ul></li>
+<li class="q"><div class="stem">「其母<u><b>方</b></u>織」的「<u><b>方</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 正在</li><li><span class="lab">(B)</span> 方法</li><li><span class="lab">(C)</span> 方形</li><li><span class="lab">(D)</span> 地方</li></ul></li>
+<li class="q"><div class="stem">「晏子<u><b>使</b></u>楚」的「<u><b>使</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 派遣</li><li><span class="lab">(B)</span> 出使</li><li><span class="lab">(C)</span> 使用</li><li><span class="lab">(D)</span> 讓</li></ul></li>
+<li class="q"><div class="stem">「獻鳩<u><b>於</b></u>簡子」的「<u><b>於</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 在</li><li><span class="lab">(B)</span> 比</li><li><span class="lab">(C)</span> 給</li><li><span class="lab">(D)</span> 被</li></ul></li>
+<li class="q"><div class="stem">「苛政猛<u><b>於</b></u>虎」的「<u><b>於</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 對於</li><li><span class="lab">(B)</span> 向</li><li><span class="lab">(C)</span> 比</li><li><span class="lab">(D)</span> 被</li></ul></li>
+<li class="q"><div class="stem">「有所失，<u><b>復</b></u>得」的「<u><b>復</b></u>」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 恢復</li><li><span class="lab">(B)</span> 又</li><li><span class="lab">(C)</span> 回覆</li><li><span class="lab">(D)</span> 報復</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="v"></p>
+<h3 class="lesson">成語練習</h3>
+<ol class="qs">
+<li class="q"><div class="stem">他講了一大串專業術語，觀眾卻聽得一頭霧水，真是＿＿。</div><ul class="opts"><li><span class="lab">(A)</span> 對牛彈琴</li><li><span class="lab">(B)</span> 畫龍點睛</li><li><span class="lab">(C)</span> 刻舟求劍</li><li><span class="lab">(D)</span> 暴虎馮河</li></ul></li>
+<li class="q"><div class="stem">環境早已改變，他卻仍照舊辦法行事，不肯調整，最適合用哪個成語形容？</div><ul class="opts"><li><span class="lab">(A)</span> 畫龍點睛</li><li><span class="lab">(B)</span> 刻舟求劍</li><li><span class="lab">(C)</span> 九牛一毛</li><li><span class="lab">(D)</span> 方興未艾</li></ul></li>
+<li class="q"><div class="stem">這篇文章結尾的一句話，使全文精神頓時鮮活起來，可用哪個成語形容？</div><ul class="opts"><li><span class="lab">(A)</span> 對牛彈琴</li><li><span class="lab">(B)</span> 九牛一毛</li><li><span class="lab">(C)</span> 畫龍點睛</li><li><span class="lab">(D)</span> 狗尾續貂</li></ul></li>
+<li class="q"><div class="stem">他沒有計畫，也沒有準備，就赤手空拳衝向強敵，這種行為稱為＿＿。</div><ul class="opts"><li><span class="lab">(A)</span> 削足適履</li><li><span class="lab">(B)</span> 圓顱方趾</li><li><span class="lab">(C)</span> 月攘一雞</li><li><span class="lab">(D)</span> 暴虎馮河</li></ul></li>
+<li class="q"><div class="stem">明知是錯的事，卻說要慢慢減少、拖延不改，可用哪個成語形容？</div><ul class="opts"><li><span class="lab">(A)</span> 月攘一雞</li><li><span class="lab">(B)</span> 亡羊補牢</li><li><span class="lab">(C)</span> 投桃報李</li><li><span class="lab">(D)</span> 捫心自問</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="c"></p>
 </section>
-<section class="lesson" id="l45">
-  <div class="lesson-head">
-    <span class="no">45</span><span class="title">孟母戒子</span>
-    <span class="src">出處：《韓詩外傳》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">孟子少時誦，其母方織。孟子輟然中止，乃復進。其母知其諠也，呼而問之曰：「何為中止？」對曰：「有所失，復得。」其母引刀裂其織，以此誡之。自是之後，孟子不復諠矣。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①誦：誦讀。</li><li>②方：正在。</li><li>③輟然中止：忽然停止。</li><li>④復進：繼續誦讀下去。</li><li>⑤諠：忘記。</li><li>⑥引：拿起。</li><li>⑦裂：割破。</li><li>⑧誡：告誡、警告。</li><li>⑨自是：從此。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「方」的用法</b><br>1. 正在（其母方織）　2. 法子、辦法　3. 方形的</div><div class="extra-box"><span class="tag">成語</span><b>方興未艾</b><br>正在蓬勃發展</div><div class="extra-box"><span class="tag">成語</span><b>圓顱方趾</b><br>人皆頭圓足方，故用以代稱人類</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>孟子讀書讀到一半忽然停下來，是因為？<div class="opts"><span>(A) 肚子餓了</span><span>(B) 一時忘記了誦讀的內容，後來又想起來</span><span>(C) 想偷懶</span><span>(D) 被外面的聲音吸引</span></div></li><li>孟母用什麼方式教訓孟子？<div class="opts"><span>(A) 責罵孟子</span><span>(B) 割斷正在織的布，比喻半途而廢會前功盡棄</span><span>(C) 不給孟子飯吃</span><span>(D) 請老師嚴加管教</span></div></li><li>本文主要告誡孟子讀書要？<div class="opts"><span>(A) 專心一致，不可半途而廢</span><span>(B) 多讀多背</span><span>(C) 遵守長輩教誨</span><span>(D) 行行出狀元</span></div></li><li>「方興未艾」的意思是？<div class="opts"><span>(A) 剛剛結束</span><span>(B) 正在蓬勃發展</span><span>(C) 即將衰敗</span><span>(D) 停滯不前</span></div></li></ol></div>
-  </div>
+<section id="lessonqs">
+<h2 class="newpage">古文今讀 41–50 課　課文選擇題</h2>
+<p class="infoline printonly">班級：＿＿＿＿　座號：＿＿＿＿　姓名：＿＿＿＿＿＿　　得分：＿＿＿＿</p>
+<p class="rule">課文文意選擇題（每課 4 題，每題 2.5 分，共 100 分）。</p>
+<h3 class="lesson">第41課　對牛彈琴<small>　《弘明集》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">公明儀對牛彈奏高雅的〈清角〉之操，牛的反應是？</div><ul class="opts"><li><span class="lab">(A)</span> 豎耳細聽</li><li><span class="lab">(B)</span> 伏地吃草，毫無反應</li><li><span class="lab">(C)</span> 受驚逃走</li><li><span class="lab">(D)</span> 搖頭擺尾表示喜愛</li></ul></li>
+<li class="q"><div class="stem">公明儀後來改彈什麼樣的聲音，牛才有反應？</div><ul class="opts"><li><span class="lab">(A)</span> 蚊虻與孤犢的聲音</li><li><span class="lab">(B)</span> 高山流水的雅樂</li><li><span class="lab">(C)</span> 雷電交加的聲音</li><li><span class="lab">(D)</span> 其他牛的叫聲</li></ul></li>
+<li class="q"><div class="stem">「對牛彈琴」這句成語主要在譏諷什麼？</div><ul class="opts one"><li><span class="lab">(A)</span> 講究音樂品味</li><li><span class="lab">(B)</span> 對不懂道理或不感興趣的對象講深奧的道理</li><li><span class="lab">(C)</span> 刻意討好聽眾</li><li><span class="lab">(D)</span> 堅持己見不知變通</li></ul></li>
+<li class="q"><div class="stem">下列何者與「九牛一毛」意義最接近？</div><ul class="opts"><li><span class="lab">(A)</span> 微不足道</li><li><span class="lab">(B)</span> 舉足輕重</li><li><span class="lab">(C)</span> 牛刀小試</li><li><span class="lab">(D)</span> 對牛彈琴</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l41"></p>
+<h3 class="lesson">第42課　月攘一雞<small>　《孟子》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">偷雞的人打算怎麼改正自己的錯誤？</div><ul class="opts one"><li><span class="lab">(A)</span> 立刻停止偷雞</li><li><span class="lab">(B)</span> 每月只偷一隻，等明年才完全停止</li><li><span class="lab">(C)</span> 向鄰居道歉賠償</li><li><span class="lab">(D)</span> 請鄰居原諒</li></ul></li>
+<li class="q"><div class="stem">「如知其非義，斯速已矣，何待來年」的用意是？</div><ul class="opts one"><li><span class="lab">(A)</span> 稱讚偷雞者知錯能改</li><li><span class="lab">(B)</span> 批評明知不對卻拖延改過</li><li><span class="lab">(C)</span> 勸人耐心等待時機</li><li><span class="lab">(D)</span> 說明偷雞合乎情理</li></ul></li>
+<li class="q"><div class="stem">本文主要說明什麼道理？</div><ul class="opts one"><li><span class="lab">(A)</span> 知錯就要立刻改正，不可拖延</li><li><span class="lab">(B)</span> 做事要合乎法律規定</li><li><span class="lab">(C)</span> 鄰居之間應互相體諒</li><li><span class="lab">(D)</span> 行善要及時</li></ul></li>
+<li class="q"><div class="stem">「請損之」的「損」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 損害</li><li><span class="lab">(B)</span> 減少</li><li><span class="lab">(C)</span> 損失</li><li><span class="lab">(D)</span> 損毀</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l42"></p>
+<h3 class="lesson">第43課　扣盤捫燭<small>　蘇軾〈日喻〉</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">生而眇者為什麼會把鐘聲當成太陽？</div><ul class="opts one"><li><span class="lab">(A)</span> 他曾經聽過鐘聲</li><li><span class="lab">(B)</span> 有人說太陽像銅盤，他敲盤得聲，後聽到鐘聲便誤以為是太陽</li><li><span class="lab">(C)</span> 他故意欺騙別人</li><li><span class="lab">(D)</span> 鐘聲與陽光很相似</li></ul></li>
+<li class="q"><div class="stem">本文以「扣盤捫燭」比喻什麼？</div><ul class="opts one"><li><span class="lab">(A)</span> 認識片面、不確切而產生誤會</li><li><span class="lab">(B)</span> 勤學好問的精神</li><li><span class="lab">(C)</span> 以訛傳訛的危害</li><li><span class="lab">(D)</span> 追求真理的堅持</li></ul></li>
+<li class="q"><div class="stem">作者用「生而眇者」的例子，主要用意是？</div><ul class="opts one"><li><span class="lab">(A)</span> 嘲笑盲人的無知</li><li><span class="lab">(B)</span> 說明未經親身體驗、僅憑片面之詞推想事物，容易產生誤會</li><li><span class="lab">(C)</span> 讚美盲人善於想像</li><li><span class="lab">(D)</span> 強調視覺的重要</li></ul></li>
+<li class="q"><div class="stem">「捫心自問」的意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 撫摸胸口</li><li><span class="lab">(B)</span> 自我反省檢討</li><li><span class="lab">(C)</span> 向人求教</li><li><span class="lab">(D)</span> 假裝鎮定</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l43"></p>
+<h3 class="lesson">第44課　道邊苦李<small>　《世說新語》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">王戎判斷路邊李樹是苦李的依據為何？</div><ul class="opts one"><li><span class="lab">(A)</span> 親自嚐過</li><li><span class="lab">(B)</span> 聽別人說的</li><li><span class="lab">(C)</span> 樹長在路邊卻果實纍纍，可推知無人採摘，必是苦李</li><li><span class="lab">(D)</span> 看葉子顏色</li></ul></li>
+<li class="q"><div class="stem">本文主要描寫王戎幼時的什麼特質？</div><ul class="opts one"><li><span class="lab">(A)</span> 貪吃</li><li><span class="lab">(B)</span> 觀察力敏銳，善於推理判斷</li><li><span class="lab">(C)</span> 體弱多病</li><li><span class="lab">(D)</span> 個性衝動</li></ul></li>
+<li class="q"><div class="stem">「諸兒競走取之，唯戎不動」顯示王戎與其他孩童的差異是？</div><ul class="opts one"><li><span class="lab">(A)</span> 跑得比較慢</li><li><span class="lab">(B)</span> 不喜歡吃李子</li><li><span class="lab">(C)</span> 能冷靜思考，不隨眾盲從</li><li><span class="lab">(D)</span> 害怕受傷</li></ul></li>
+<li class="q"><div class="stem">「投我以桃，報之以李」的意思最接近？</div><ul class="opts"><li><span class="lab">(A)</span> 禮尚往來</li><li><span class="lab">(B)</span> 恩將仇報</li><li><span class="lab">(C)</span> 得寸進尺</li><li><span class="lab">(D)</span> 以德報怨</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l44"></p>
+<h3 class="lesson">第45課　孟母戒子<small>　《韓詩外傳》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">孟子背書背到一半忽然停下來，是因為？</div><ul class="opts one"><li><span class="lab">(A)</span> 肚子餓了</li><li><span class="lab">(B)</span> 一時忘記了內容，後來又想起來</li><li><span class="lab">(C)</span> 想偷懶</li><li><span class="lab">(D)</span> 被外面的聲音吸引</li></ul></li>
+<li class="q"><div class="stem">孟母用什麼方式教訓孟子？</div><ul class="opts one"><li><span class="lab">(A)</span> 責罵孟子</li><li><span class="lab">(B)</span> 割斷正在織的布，比喻半途而廢會前功盡棄</li><li><span class="lab">(C)</span> 不給孟子飯吃</li><li><span class="lab">(D)</span> 請老師嚴加管教</li></ul></li>
+<li class="q"><div class="stem">本文主要告誡孟子讀書要？</div><ul class="opts one"><li><span class="lab">(A)</span> 專心一致，不可半途而廢</li><li><span class="lab">(B)</span> 多讀多背</li><li><span class="lab">(C)</span> 遵守長輩教誨</li><li><span class="lab">(D)</span> 行行出狀元</li></ul></li>
+<li class="q"><div class="stem">「方興未艾」的意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 剛剛結束</li><li><span class="lab">(B)</span> 正在蓬勃發展</li><li><span class="lab">(C)</span> 即將衰敗</li><li><span class="lab">(D)</span> 停滯不前</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l45"></p>
+<h3 class="lesson">第46課　狗國狗門<small>　《晏子春秋》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">楚國人為什麼在大門旁開一個小門請晏子進入？</div><ul class="opts one"><li><span class="lab">(A)</span> 大門正在整修</li><li><span class="lab">(B)</span> 故意羞辱晏子身材矮小</li><li><span class="lab">(C)</span> 表示對晏子的尊敬</li><li><span class="lab">(D)</span> 小門比較近</li></ul></li>
+<li class="q"><div class="stem">晏子用什麼理由拒絕從小門進入？</div><ul class="opts one"><li><span class="lab">(A)</span> 小門太窄</li><li><span class="lab">(B)</span> 出使狗國的人才從狗門入，他是出使楚國，不該從此門入</li><li><span class="lab">(C)</span> 小門不吉利</li><li><span class="lab">(D)</span> 大門比較氣派</li></ul></li>
+<li class="q"><div class="stem">本文顯示晏子具有什麼特質？</div><ul class="opts"><li><span class="lab">(A)</span> 身材高大</li><li><span class="lab">(B)</span> 機智善辯，不畏強權</li><li><span class="lab">(C)</span> 個性軟弱</li><li><span class="lab">(D)</span> 不懂禮節</li></ul></li>
+<li class="q"><div class="stem">「暴虎馮河」用來比喻什麼樣的人？</div><ul class="opts"><li><span class="lab">(A)</span> 有勇無謀</li><li><span class="lab">(B)</span> 足智多謀</li><li><span class="lab">(C)</span> 膽小怕事</li><li><span class="lab">(D)</span> 溫文儒雅</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l46"></p>
+<h3 class="lesson">第47課　畫龍點睛<small>　《水衡記》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">張僧繇畫龍卻不點眼睛，是因為？</div><ul class="opts one"><li><span class="lab">(A)</span> 技巧不足</li><li><span class="lab">(B)</span> 他說點了眼睛龍就會飛走</li><li><span class="lab">(C)</span> 故意賣關子</li><li><span class="lab">(D)</span> 顏料不足</li></ul></li>
+<li class="q"><div class="stem">張僧繇點了其中一條龍的眼睛後，發生什麼事？</div><ul class="opts one"><li><span class="lab">(A)</span> 什麼都沒發生</li><li><span class="lab">(B)</span> 雷電破壁，被點睛的龍乘雲上天</li><li><span class="lab">(C)</span> 龍像變成石頭</li><li><span class="lab">(D)</span> 牆壁倒塌了</li></ul></li>
+<li class="q"><div class="stem">「畫龍點睛」現在多用來比喻什麼？</div><ul class="opts one"><li><span class="lab">(A)</span> 徒勞無功</li><li><span class="lab">(B)</span> 在文章或言談的關鍵處加上精要一筆，使全體更加生動傳神</li><li><span class="lab">(C)</span> 弄巧成拙</li><li><span class="lab">(D)</span> 多此一舉</li></ul></li>
+<li class="q"><div class="stem">壁上原有四龍，張僧繇只點了其中一龍的眼睛，那條龍飛走後，牆上還剩幾條龍？</div><ul class="opts"><li><span class="lab">(A)</span> 一條</li><li><span class="lab">(B)</span> 二條</li><li><span class="lab">(C)</span> 三條</li><li><span class="lab">(D)</span> 四條</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l47"></p>
+<h3 class="lesson">第48課　顏回好學<small>　《史記》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">孔子聽到顏回過世後的反應是？</div><ul class="opts one"><li><span class="lab">(A)</span> 無動於衷</li><li><span class="lab">(B)</span> 哭得非常悲傷，說有顏回後弟子更親近他</li><li><span class="lab">(C)</span> 責怪顏回不夠謹慎</li><li><span class="lab">(D)</span> 舉行盛大喪禮</li></ul></li>
+<li class="q"><div class="stem">孔子認為顏回好學表現在哪兩件事？</div><ul class="opts"><li><span class="lab">(A)</span> 博覽群書、能言善道</li><li><span class="lab">(B)</span> 不遷怒、不貳過</li><li><span class="lab">(C)</span> 家境清寒卻樂在其中</li><li><span class="lab">(D)</span> 勤練武藝、廣交朋友</li></ul></li>
+<li class="q"><div class="stem">「不遷怒」的意思是？</div><ul class="opts one"><li><span class="lab">(A)</span> 不遷居</li><li><span class="lab">(B)</span> 不把對某人的怒氣發洩到別人身上</li><li><span class="lab">(C)</span> 不輕易生氣</li><li><span class="lab">(D)</span> 不記仇</li></ul></li>
+<li class="q"><div class="stem">「今也則亡」的「亡」，意思是？</div><ul class="opts"><li><span class="lab">(A)</span> 逃亡</li><li><span class="lab">(B)</span> 滅亡</li><li><span class="lab">(C)</span> 死亡</li><li><span class="lab">(D)</span> 無、沒有</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l48"></p>
+<h3 class="lesson">第49課　刻舟求劍<small>　《呂氏春秋》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">楚人的劍掉入水中後，他做了什麼？</div><ul class="opts one"><li><span class="lab">(A)</span> 立刻跳下水找劍</li><li><span class="lab">(B)</span> 在船身刻記號，等船停下再從記號處入水找劍</li><li><span class="lab">(C)</span> 請船夫幫忙打撈</li><li><span class="lab">(D)</span> 放棄尋找</li></ul></li>
+<li class="q"><div class="stem">楚人為什麼找不到劍？</div><ul class="opts one"><li><span class="lab">(A)</span> 劍被別人撿走</li><li><span class="lab">(B)</span> 船在移動，劍卻沉在原處，記號位置與劍的位置已不同</li><li><span class="lab">(C)</span> 水太深</li><li><span class="lab">(D)</span> 記號刻得不清楚</li></ul></li>
+<li class="q"><div class="stem">「刻舟求劍」用來比喻什麼樣的人？</div><ul class="opts"><li><span class="lab">(A)</span> 勇於嘗試</li><li><span class="lab">(B)</span> 拘泥成規、不知變通</li><li><span class="lab">(C)</span> 粗心大意</li><li><span class="lab">(D)</span> 聰明機智</li></ul></li>
+<li class="q"><div class="stem">下列何者與「刻舟求劍」意義最相近？</div><ul class="opts"><li><span class="lab">(A)</span> 膠柱鼓瑟</li><li><span class="lab">(B)</span> 臨渴掘井</li><li><span class="lab">(C)</span> 守株待兔</li><li><span class="lab">(D)</span> 畫蛇添足</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l49"></p>
+<h3 class="lesson">第50課　獻鳩放生<small>　《列子》</small></h3>
+<ol class="qs">
+<li class="q"><div class="stem">邯鄲百姓為什麼在正月初一獻斑鳩給趙簡子？</div><ul class="opts one"><li><span class="lab">(A)</span> 出於敬畏</li><li><span class="lab">(B)</span> 趙簡子重賞獻鳩之人，百姓爭相捕捉來獻</li><li><span class="lab">(C)</span> 傳統節慶習俗</li><li><span class="lab">(D)</span> 斑鳩是吉祥象徵</li></ul></li>
+<li class="q"><div class="stem">門客認為趙簡子「正旦放生」的做法有什麼問題？</div><ul class="opts one"><li><span class="lab">(A)</span> 放生方式不對</li><li><span class="lab">(B)</span> 百姓為獻鳥而競相捕捉，害死更多斑鳩，恩惠抵不過傷害</li><li><span class="lab">(C)</span> 斑鳩不該放生</li><li><span class="lab">(D)</span> 應放生更多動物</li></ul></li>
+<li class="q"><div class="stem">本文主要諷刺什麼樣的行為？</div><ul class="opts one"><li><span class="lab">(A)</span> 真心行善卻方法錯誤，徒具形式未能實現仁德</li><li><span class="lab">(B)</span> 吝嗇小氣</li><li><span class="lab">(C)</span> 濫用權勢</li><li><span class="lab">(D)</span> 崇尚迷信</li></ul></li>
+<li class="q"><div class="stem">趙簡子聽完門客的話後，態度是？</div><ul class="opts one"><li><span class="lab">(A)</span> 勃然大怒</li><li><span class="lab">(B)</span> 欣然接受，認同門客的看法</li><li><span class="lab">(C)</span> 完全不予理會</li><li><span class="lab">(D)</span> 反駁門客的說法</li></ul></li>
+</ol>
+<p class="sec-score" data-sec="l50"></p>
 </section>
-<section class="lesson" id="l46">
-  <div class="lesson-head">
-    <span class="no">46</span><span class="title">狗國狗門</span>
-    <span class="src">出處：《晏子春秋》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">晏子使楚，楚國以晏子短，為小門於大門之側而延晏子。晏子不入，曰：「使狗國者，從狗門入；今臣使楚，不當從此門入。」儐者更道，從大門入。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①使：出使。</li><li>②延：請。</li><li>③儐者：負責接待賓客的人。</li><li>④更道：換一條路。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">延伸</span><b>暴虎馮河</b><br>暴，徒手搏鬥；馮，徒步渡河。指空手與虎搏鬥，不靠舟船渡河，比喻人有勇而無謀。</div><div class="extra-box"><span class="tag">成語教室</span><b>狗尾續貂</b><br>把不好的東西接續在好東西後面，前後不相稱</div><div class="extra-box"><span class="tag">成語教室</span><b>偷雞摸狗</b><br>比喻沒有正經本領、行為卑劣的人</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>楚國人為何在大門旁開一個小門請晏子從那裡進入？<div class="opts"><span>(A) 大門正在整修</span><span>(B) 故意羞辱晏子身材矮小</span><span>(C) 表示對晏子的尊敬</span><span>(D) 小門比較近</span></div></li><li>晏子用什麼理由拒絕從小門進入？<div class="opts"><span>(A) 小門太窄，走不進去</span><span>(B) 只有出使狗國的人才從狗門進入，他是出使楚國，不該從此門入</span><span>(C) 小門不吉利</span><span>(D) 大門比較氣派</span></div></li><li>本文顯示晏子具有什麼樣的特質？<div class="opts"><span>(A) 身材高大</span><span>(B) 機智善辯，不畏強權</span><span>(C) 個性軟弱</span><span>(D) 不懂禮節</span></div></li><li>「暴虎馮河」用來比喻什麼樣的人？<div class="opts"><span>(A) 有勇無謀</span><span>(B) 足智多謀</span><span>(C) 膽小怕事</span><span>(D) 溫文儒雅</span></div></li></ol></div>
-  </div>
+<section id="answers">
+<h2 class="newpage">參考答案與解析</h2>
+<details class="answers"><summary>顯示參考答案與解析（老師用）</summary>
+<h3>壹、虛字練習</h3><div class="tablewrap"><table class="key"><thead><tr><th>題號</th><th>答案</th><th>解析</th></tr></thead><tbody><tr><td class="c">1</td><td class="c ans">B</td><td>之：代詞，指生而眇者；有人告訴天生失明的人太陽的形狀。</td></tr><tr><td class="c">2</td><td class="c ans">B</td><td>之：代詞，指王戎；有人問他為什麼不去摘李子。</td></tr><tr><td class="c">3</td><td class="c ans">A</td><td>之：代詞，指李子；有人摘來嚐，果然是苦的。</td></tr><tr><td class="c">4</td><td class="c ans">C</td><td>之：代詞，指眼睛；點上眼睛，龍就會飛走。</td></tr><tr><td class="c">5</td><td class="c ans">B</td><td>之：代詞，指鳩（斑鳩）；先捕捉再放生。</td></tr><tr><td class="c">6</td><td class="c ans">A</td><td>之：助詞，的；大門的旁邊。</td></tr><tr><td class="c">7</td><td class="c ans">C</td><td>之：助詞，無意義；插在主語與謂語之間，取消句子的獨立性。</td></tr><tr><td class="c">8</td><td class="c ans">A</td><td>其：代詞，指孟子；孟子的母親。</td></tr><tr><td class="c">9</td><td class="c ans">B</td><td>其：代詞，指孟母；割斷的是孟母自己織的布。</td></tr><tr><td class="c">10</td><td class="c ans">A</td><td>其：代詞，指偷雞的行為；如果知道這件事不合道義。</td></tr><tr><td class="c">11</td><td class="c ans">A</td><td>方：副詞，正在；孟母當時正在織布。</td></tr><tr><td class="c">12</td><td class="c ans">B</td><td>使：動詞，出使；晏子出使楚國。</td></tr><tr><td class="c">13</td><td class="c ans">C</td><td>於：介詞，給；獻斑鳩給簡子。</td></tr><tr><td class="c">14</td><td class="c ans">C</td><td>於：介詞，比；苛政比老虎還要兇猛。</td></tr><tr><td class="c">15</td><td class="c ans">B</td><td>復：副詞，又；忘記了一些，後來又想起來（記得）。</td></tr></tbody></table></div><h3>貳、成語練習</h3><div class="tablewrap"><table class="key"><thead><tr><th>題號</th><th>答案</th><th>解析</th></tr></thead><tbody><tr><td class="c">1</td><td class="c ans">A</td><td>對牛彈琴：比喻對不懂道理的人講道理，或說話不看對象。</td></tr><tr><td class="c">2</td><td class="c ans">B</td><td>刻舟求劍：比喻拘泥固執，不知變通。</td></tr><tr><td class="c">3</td><td class="c ans">C</td><td>畫龍點睛：在最關鍵之處加上一筆，使全體更加生動傳神。</td></tr><tr><td class="c">4</td><td class="c ans">D</td><td>暴虎馮河：徒手搏虎、徒步渡河，比喻有勇無謀。</td></tr><tr><td class="c">5</td><td class="c ans">A</td><td>月攘一雞：明知不對，卻拖延不肯立即改正。</td></tr></tbody></table></div><h3>參、課文選擇題（題號：課次－題號）</h3><div class="tablewrap"><table class="key"><thead><tr><th>題號（課次－題號）</th><th>答案</th><th>解析</th></tr></thead><tbody><tr><td class="c">41－1</td><td class="c ans">B</td><td>牛「伏食如故」，仍舊低頭吃草，因為樂曲不合牠的聽覺習慣。</td></tr><tr><td class="c">41－2</td><td class="c ans">A</td><td>改彈蚊虻鼓翅之聲、孤犢悲鳴之聲，牛便掉尾奮耳、蹀躞而聽。</td></tr><tr><td class="c">41－3</td><td class="c ans">B</td><td>對牛彈琴：比喻對不懂道理的人講道理，或說話不看對象。</td></tr><tr><td class="c">41－4</td><td class="c ans">A</td><td>九牛一毛：比喻多數中的極少部分，對大體沒有什麼影響，即微不足道。</td></tr><tr><td class="c">42－1</td><td class="c ans">B</td><td>「請損之，月攘一雞，以待來年然後已」：逐步減少，等到明年才停。</td></tr><tr><td class="c">42－2</td><td class="c ans">B</td><td>既然知道不合道義，就應該趕快停止，何必等到明年？</td></tr><tr><td class="c">42－3</td><td class="c ans">A</td><td>孟子以偷雞者為例，說明知錯即改，不可拖延。</td></tr><tr><td class="c">42－4</td><td class="c ans">B</td><td>損：減少；「請損之」是請讓我減少偷雞的數量。</td></tr><tr><td class="c">43－1</td><td class="c ans">B</td><td>他由「銅盤的聲音」推想太陽，聽到鐘聲就以為是太陽，是憑片面資訊推想。</td></tr><tr><td class="c">43－2</td><td class="c ans">A</td><td>課本標註：比喻認識不確切而產生誤會。</td></tr><tr><td class="c">43－3</td><td class="c ans">B</td><td>結尾「以其未嘗見而求之人也」點出：沒有親身體驗，只問別人，容易失真。</td></tr><tr><td class="c">43－4</td><td class="c ans">B</td><td>捫：撫摸；捫心自問：指自我反省檢討。</td></tr><tr><td class="c">44－1</td><td class="c ans">C</td><td>「樹在道邊而多子，此必苦李」——由現象推理出結論。</td></tr><tr><td class="c">44－2</td><td class="c ans">B</td><td>眾人搶著摘李，只有王戎冷靜觀察並推理。</td></tr><tr><td class="c">44－3</td><td class="c ans">C</td><td>「唯戎不動」是因為他先思考，不隨眾行動。</td></tr><tr><td class="c">44－4</td><td class="c ans">A</td><td>《詩經》名句，比喻人際往來，有來有往，禮尚往來。</td></tr><tr><td class="c">45－1</td><td class="c ans">B</td><td>孟子回答「有所失，復得」——忘了一些，又記起來。</td></tr><tr><td class="c">45－2</td><td class="c ans">B</td><td>「引刀裂其織」，用行動告誡讀書不能半途而廢。</td></tr><tr><td class="c">45－3</td><td class="c ans">A</td><td>孟母以割布告誡，重點在專心致志、不半途而廢。</td></tr><tr><td class="c">45－4</td><td class="c ans">B</td><td>方：正；艾：停止；方興未艾指正在蓬勃發展。</td></tr><tr><td class="c">46－1</td><td class="c ans">B</td><td>「楚國以晏子短，為小門於大門之側」，是想羞辱他身材矮小。</td></tr><tr><td class="c">46－2</td><td class="c ans">B</td><td>「使狗國者，從狗門入；今臣使楚，不當從此門入」。</td></tr><tr><td class="c">46－3</td><td class="c ans">B</td><td>晏子以話語反擊，使楚人改開大門，展現機智善辯。</td></tr><tr><td class="c">46－4</td><td class="c ans">A</td><td>暴：徒手搏鬥；馮：徒步渡河；比喻有勇而無謀。</td></tr><tr><td class="c">47－1</td><td class="c ans">B</td><td>他常說「點之即飛去」，所以不點睛。</td></tr><tr><td class="c">47－2</td><td class="c ans">B</td><td>「雷電破壁，一龍乘雲上天」。</td></tr><tr><td class="c">47－3</td><td class="c ans">B</td><td>課本標註：畫龍點睛是在最關鍵之處加上一筆，使全體更加生動傳神。</td></tr><tr><td class="c">47－4</td><td class="c ans">C</td><td>4－1＝3，「不點睛者皆在」，所以剩下三條。</td></tr><tr><td class="c">48－1</td><td class="c ans">B</td><td>「孔子哭之慟，曰：自吾有回，門人益親。」</td></tr><tr><td class="c">48－2</td><td class="c ans">B</td><td>「有顏回者好學，不遷怒，不貳過。」</td></tr><tr><td class="c">48－3</td><td class="c ans">B</td><td>遷：轉移；不遷怒即不把怒氣轉移發洩到他人身上。</td></tr><tr><td class="c">48－4</td><td class="c ans">D</td><td>亡通「無」，指現在已經沒有像顏回那樣好學的人了。</td></tr><tr><td class="c">49－1</td><td class="c ans">B</td><td>「遽契其舟」，船停後「從其所契者入水求之」。</td></tr><tr><td class="c">49－2</td><td class="c ans">B</td><td>「舟已行矣，而劍不行」。</td></tr><tr><td class="c">49－3</td><td class="c ans">B</td><td>刻舟求劍：比喻拘泥固執，不知變通。</td></tr><tr><td class="c">49－4</td><td class="c ans">A</td><td>膠柱鼓瑟也是比喻頑固而不知變通。（守株待兔比喻不勞而獲的僥倖心理）</td></tr><tr><td class="c">50－1</td><td class="c ans">B</td><td>「簡子大悅，厚賞之」，所以百姓爭相捕鳩獻上。</td></tr><tr><td class="c">50－2</td><td class="c ans">B</td><td>「競而捕之，死者眾矣」，「恩過不相補矣」。</td></tr><tr><td class="c">50－3</td><td class="c ans">A</td><td>門客指出真正愛護生命應「禁民勿捕」，而非表面放生。</td></tr><tr><td class="c">50－4</td><td class="c ans">B</td><td>簡子曰：「然。」表示贊同。</td></tr></tbody></table></div></details>
 </section>
-<section class="lesson" id="l47">
-  <div class="lesson-head">
-    <span class="no">47</span><span class="title">畫龍點睛</span>
-    <span class="src">出處：唐．張彥遠《歷代名畫記》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">張僧繇於金陵安樂寺畫四龍於壁，不點睛。每曰：「點之即飛去。」人以為誕，固請點之。須臾，雷電破壁，一龍乘雲上天，不點睛者皆在。</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①金陵：今南京。</li><li>②每：常常。</li><li>③誕：荒誕、虛妄。</li><li>④固：堅持。</li><li>⑤須臾：一會兒。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「之」的用法</b><br>代詞，指眼睛</div><div class="extra-box"><span class="tag">延伸</span><b>轉瞬、彈指</b><br>一眨眼；「俄而」則是剎那</div><div class="extra-box"><span class="tag">趣味諺語</span><b>大水沖倒龍王廟</b><br>比喻自己人不認識自己人，或自己人之間發生誤會</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>張僧繇畫龍卻不點眼睛的原因是？<div class="opts"><span>(A) 技巧不足，畫不出眼睛</span><span>(B) 他認為一旦點上眼睛，龍就會飛走</span><span>(C) 故意賣關子</span><span>(D) 顏料不足</span></div></li><li>眾人請張僧繇點睛之後發生了什麼事？<div class="opts"><span>(A) 什麼都沒發生</span><span>(B) 雷電破壁，被點睛的龍乘雲飛上天</span><span>(C) 龍變成石頭</span><span>(D) 牆壁倒塌</span></div></li><li>「畫龍點睛」現在多用來比喻？<div class="opts"><span>(A) 徒勞無功</span><span>(B) 在文章或言談的關鍵處加上精要的一筆，使內容更加生動傳神</span><span>(C) 弄巧成拙</span><span>(D) 畫蛇添足</span></div></li><li>下列何者與「畫龍點睛」的用法最為相反？<div class="opts"><span>(A) 一語道破</span><span>(B) 錦上添花</span><span>(C) 畫蛇添足，多此一舉</span><span>(D) 恰到好處</span></div></li></ol></div>
-  </div>
-</section>
-<section class="lesson" id="l48">
-  <div class="lesson-head">
-    <span class="no">48</span><span class="title">顏回好學</span>
-    <span class="src">出處：《史記》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">回年二十九，髮盡白，蚤死。孔子哭之慟，曰：「自吾有回，門人益親。」魯哀公問：「弟子孰為好學？」孔子對曰：「有顏回者好學，不遷怒，不貳過。不幸短命死矣，今也則亡。」</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①蚤：通「早」。</li><li>②慟：過度悲傷、哀痛。</li><li>③孰：誰。</li><li>④不遷怒：不把對某人的怒氣發洩在其他人身上。</li><li>⑤不貳過：不犯同樣的錯誤。</li><li>⑥亡：通「無」，沒有。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「舉」的用法</b><br>1. 全部的、整個的（如舉國上下）　2. 中舉　3. 同「悉」，全</div><div class="extra-box"><span class="tag">人物小傳</span><b>孔子</b><br>名丘，字仲尼，春秋時代魯國人，儒家創始人，被尊稱為「至聖先師」。</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>孔子聽聞顏回過世後的反應是？<div class="opts"><span>(A) 無動於衷</span><span>(B) 哭得非常悲傷，說自從有了顏回，弟子們更加親近他</span><span>(C) 責怪顏回不夠謹慎</span><span>(D) 舉行盛大的喪禮</span></div></li><li>孔子認為顏回好學表現在哪兩件事上？<div class="opts"><span>(A) 博覽群書、能言善道</span><span>(B) 不遷怒、不貳過</span><span>(C) 家境清寒卻樂在其中</span><span>(D) 勤練武藝、廣交朋友</span></div></li><li>「不遷怒」的意思是？<div class="opts"><span>(A) 不遷居</span><span>(B) 不把對某人的怒氣發洩到別人身上</span><span>(C) 不輕易生氣</span><span>(D) 不記仇</span></div></li><li>孔子稱顏回好學，主要著重在顏回哪方面的表現？<div class="opts"><span>(A) 知識淵博</span><span>(B) 品德修養與面對過錯的態度</span><span>(C) 辯才無礙</span><span>(D) 體能出眾</span></div></li></ol></div>
-  </div>
-</section>
-<section class="lesson" id="l49">
-  <div class="lesson-head">
-    <span class="no">49</span><span class="title">刻舟求劍</span>
-    <span class="src">出處：《呂氏春秋》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">楚人有涉江者，其劍自舟中墜於水，遽契其舟，曰：「是吾劍之所從墜。」舟止，從其所契者入水求之。舟已行矣，而劍不行，求劍若此，不亦惑乎？</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①涉江：渡江。</li><li>②遽：急忙。</li><li>③契：雕刻。</li><li>④惑：糊塗。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「其」的用法</b><br>代詞，指涉江者</div><div class="extra-box"><span class="tag">延伸</span><b>刻舟求劍</b><br>比喻拘泥固執，不知變通</div><div class="extra-box"><span class="tag">延伸</span><b>膠柱鼓瑟／削足適履</b><br>前者比喻頑固而不知變通；後者比喻勉強遷就，拘泥舊例而不知變通</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>楚人的劍掉入水中後，他做了什麼動作？<div class="opts"><span>(A) 立刻跳下水找劍</span><span>(B) 在船身上刻記號，等船停下再去記號處找劍</span><span>(C) 請船夫幫忙打撈</span><span>(D) 放棄尋找</span></div></li><li>楚人的做法為什麼找不到劍？<div class="opts"><span>(A) 劍已經被別人撿走</span><span>(B) 船一直在移動，劍卻沉在原處不動，記號的位置與劍的實際位置已不同</span><span>(C) 水太深</span><span>(D) 記號刻得不清楚</span></div></li><li>「刻舟求劍」用來比喻什麼樣的人？<div class="opts"><span>(A) 勇於嘗試</span><span>(B) 拘泥成規、不知隨情況變通</span><span>(C) 粗心大意</span><span>(D) 聰明機智</span></div></li><li>下列何者與「刻舟求劍」意義最相近？<div class="opts"><span>(A) 膠柱鼓瑟</span><span>(B) 臨渴掘井</span><span>(C) 守株待兔</span><span>(D) 畫蛇添足</span></div></li></ol></div>
-  </div>
-</section>
-<section class="lesson" id="l50">
-  <div class="lesson-head">
-    <span class="no">50</span><span class="title">獻鳩放生</span>
-    <span class="src">出處：《列子》</span>
-  </div>
-  <div class="lesson-body">
-    <div class="orig">邯鄲之民以正月之旦獻鳩於簡子，簡子大悅，厚賞之。客問其故，簡子曰：「正旦放生，示有恩也。」客曰：「民知君之欲放之，競而捕之，死者眾矣。君如欲生之，不若禁民勿捕。捕而放之，恩過不相補矣。」簡子曰：「然。」</div>
-    <h3 class="section-h">注釋</h3>
-    <ul class="notes"><li>①旦：早晨，此指正月初一。</li><li>②鳩：斑鳩，一種鳥。</li><li>③簡子：趙簡子，春秋時晉國大夫。</li><li>④厚賞：重賞。</li><li>⑤故：緣故、原因。</li><li>⑥示：表示。</li></ul>
-    <h3 class="section-h">虛字．成語．延伸補充</h3>
-    <div><div class="extra-box"><span class="tag">虛字</span><b>「於」的用法</b><br>1. 對於　2. 向　3. 在　4. 比（苛政猛「於」虎）　5. 給（己所不欲，勿施「於」人）　6. 被，置於動詞之後表示被動</div></div>
-    <div class="quiz"><h3 class="section-h">隨堂練習</h3><ol><li>邯鄲百姓為何在正月初一獻斑鳩給趙簡子？<div class="opts"><span>(A) 出於敬畏</span><span>(B) 因趙簡子重賞獻鳩之人，百姓爭相捕捉來獻</span><span>(C) 是傳統節慶習俗</span><span>(D) 斑鳩是吉祥的象徵</span></div></li><li>門客認為趙簡子「正旦放生」的做法有什麼問題？<div class="opts"><span>(A) 放生的方式不對</span><span>(B) 百姓為了獻鳥而競相捕捉，反而害死更多斑鳩，恩惠抵不過傷害</span><span>(C) 斑鳩不該被放生</span><span>(D) 應該放生更多動物</span></div></li><li>本文主要諷刺什麼樣的行為？<div class="opts"><span>(A) 真心行善卻方法錯誤，徒具形式而未能真正實踐仁德</span><span>(B) 吝嗇小氣</span><span>(C) 濫用權勢</span><span>(D) 崇尚迷信</span></div></li><li>根據本文，趙簡子聽完門客的話後態度為何？<div class="opts"><span>(A) 勃然大怒</span><span>(B) 欣然接受，認同門客的看法</span><span>(C) 完全不予理會</span><span>(D) 反駁門客的說法</span></div></li></ol></div>
-  </div>
-</section>
-<section class="lesson">
-  <div class="lesson-head"><span class="title">虛字複習：「盡」</span>
-    <span class="src">ㄐㄧㄣˋ</span></div>
-  <div class="lesson-body">
-    <div class="review"><div class="grp"><b>完結、終止，動詞</b><ul><li>盡在不言中</li><li>應有盡有</li><li>二蟲盡為所吞</li></ul></div><div class="grp"><b>完備的，形容詞</b><ul><li>詳盡</li></ul></div><div class="grp"><b>全部用出，竭力、努力完成，動詞</b><ul><li>竭盡所能</li><li>盡其所長</li><li>消滅殆盡</li></ul></div><div class="grp"><b>隱沒，動詞</b><ul><li>孤帆遠影碧山盡</li><li>白日依山盡</li></ul></div><div class="grp"><b>自盡：死亡，動詞</b><ul><li>自盡</li></ul></div><div class="grp"><b>完全，全部，副詞</b><ul><li>取之不盡</li><li>春蠶到死絲方盡，蠟炬成灰淚始乾</li></ul></div><div class="grp"><b>極端、達到極限，副詞</b><ul><li>盡善盡美</li></ul></div></div>
-  </div>
-</section>
-<div class="answer-key"><h3 class="section-h" style="border:none">隨堂練習解答（僅供教師版參考）</h3><div><b>第41課．對牛彈琴</b>　1.B、2.A、3.B、4.A</div><div><b>第42課．月攘一雞</b>　1.B、2.B、3.A、4.B</div><div><b>第43課．扣盤捫燭</b>　1.B、2.A、3.B、4.B</div><div><b>第44課．道邊苦李</b>　1.C、2.B、3.C、4.A</div><div><b>第45課．孟母戒子</b>　1.B、2.B、3.A、4.B</div><div><b>第46課．狗國狗門</b>　1.B、2.B、3.B、4.A</div><div><b>第47課．畫龍點睛</b>　1.B、2.B、3.B、4.C</div><div><b>第48課．顏回好學</b>　1.B、2.B、3.B、4.B</div><div><b>第49課．刻舟求劍</b>　1.B、2.B、3.B、4.A</div><div><b>第50課．獻鳩放生</b>　1.B、2.B、3.A、4.B</div></div>
 <footer>陳翠屏老師 國文科教材　東興國中</footer>
-</div></body></html>
+</main>
+
+</body>
+</html>
